@@ -1,0 +1,29 @@
+{
+  "name": "imile-leads-automation",
+  "version": "1.0.0",
+  "description": "Automatización de leads y generación de emails personalizados para iMile México",
+  "main": "src/automation-orchestrator.js",
+  "scripts": {
+    "demo": "node demo.js",
+    "test": "jest",
+    "lint": "eslint src/ demo.js"
+  },
+  "keywords": [
+    "leads",
+    "automation",
+    "email",
+    "prospection",
+    "sales",
+    "imile"
+  ],
+  "author": "Javier Malher",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

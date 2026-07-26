@@ -1,0 +1,842 @@
+[
+  {
+    "company": {
+      "name": "Amazon México Logistics",
+      "domain": "amazon.com.mx",
+      "industry": "E-commerce & Logística",
+      "city": "CDMX",
+      "employees": 5000,
+      "annualRevenue": 2500000000,
+      "score": 100,
+      "lastUpdated": "2026-07-26T18:34:18.528Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Juan García",
+      "job_title": "Jefe de Almacén",
+      "email": "juan.garcía@amazon.com.mx",
+      "phone": "+52 55 4387 8960",
+      "linkedin_url": "https://linkedin.com/in/juan-garcía",
+      "company_name": "Amazon México Logistics",
+      "company_domain": "amazon.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.552Z"
+    },
+    "email": {
+      "to": "juan.garcía@amazon.com.mx",
+      "subject": "Juan García, ¿cómo es tu logística última milla?",
+      "body": "¡Hola Juan García!\n\nHace poco noté que trabajan en Amazon México Logistics en el área de jefe de almacén.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Amazon México Logistics probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Juan García!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Amazon México Logistics</strong> en el área de <strong>Jefe de Almacén</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Amazon México Logistics probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Juan García",
+        "contactRole": "Jefe de Almacén",
+        "companyName": "Amazon México Logistics",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Amazon México Logistics",
+      "domain": "amazon.com.mx",
+      "industry": "E-commerce & Logística",
+      "city": "CDMX",
+      "employees": 5000,
+      "annualRevenue": 2500000000,
+      "score": 100,
+      "lastUpdated": "2026-07-26T18:34:18.528Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "María López",
+      "job_title": "Jefe de Almacén",
+      "email": "maría.lópez@amazon.com.mx",
+      "phone": "+52 55 8258 4725",
+      "linkedin_url": "https://linkedin.com/in/maría-lópez",
+      "company_name": "Amazon México Logistics",
+      "company_domain": "amazon.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.552Z"
+    },
+    "email": {
+      "to": "maría.lópez@amazon.com.mx",
+      "subject": "María López: Reducir costos de última milla en Amazon México Logistics",
+      "body": "¡Hola María López!\n\nHace poco noté que trabajan en Amazon México Logistics en el área de jefe de almacén.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Amazon México Logistics probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola María López!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Amazon México Logistics</strong> en el área de <strong>Jefe de Almacén</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Amazon México Logistics probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "María López",
+        "contactRole": "Jefe de Almacén",
+        "companyName": "Amazon México Logistics",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Amazon México Logistics",
+      "domain": "amazon.com.mx",
+      "industry": "E-commerce & Logística",
+      "city": "CDMX",
+      "employees": 5000,
+      "annualRevenue": 2500000000,
+      "score": 100,
+      "lastUpdated": "2026-07-26T18:34:18.528Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Carlos Martínez",
+      "job_title": "Director de Logística",
+      "email": "carlos.martínez@amazon.com.mx",
+      "phone": "+52 55 1538 2479",
+      "linkedin_url": "https://linkedin.com/in/carlos-martínez",
+      "company_name": "Amazon México Logistics",
+      "company_domain": "amazon.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.552Z"
+    },
+    "email": {
+      "to": "carlos.martínez@amazon.com.mx",
+      "subject": "Solución logística para Amazon México Logistics - Conversemos",
+      "body": "¡Hola Carlos Martínez!\n\nHace poco noté que trabajan en Amazon México Logistics en el área de director de logística.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Amazon México Logistics probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Carlos Martínez!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Amazon México Logistics</strong> en el área de <strong>Director de Logística</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Amazon México Logistics probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Carlos Martínez",
+        "contactRole": "Director de Logística",
+        "companyName": "Amazon México Logistics",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Mercado Libre",
+      "domain": "mercadolibre.com.mx",
+      "industry": "E-commerce",
+      "city": "CDMX",
+      "employees": 3000,
+      "annualRevenue": 1800000000,
+      "score": 75,
+      "lastUpdated": "2026-07-26T18:34:18.552Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Juan García",
+      "job_title": "Director de Distribución",
+      "email": "juan.garcía@mercadolibre.com.mx",
+      "phone": "+52 55 7331 6279",
+      "linkedin_url": "https://linkedin.com/in/juan-garcía",
+      "company_name": "Mercado Libre",
+      "company_domain": "mercadolibre.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.553Z"
+    },
+    "email": {
+      "to": "juan.garcía@mercadolibre.com.mx",
+      "subject": "Ahorro de hasta 30% en costos de distribución para Mercado Libre",
+      "body": "¡Hola Juan García!\n\nHace poco noté que trabajan en Mercado Libre en el área de director de distribución.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Mercado Libre probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Juan García!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Mercado Libre</strong> en el área de <strong>Director de Distribución</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Mercado Libre probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Juan García",
+        "contactRole": "Director de Distribución",
+        "companyName": "Mercado Libre",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Mercado Libre",
+      "domain": "mercadolibre.com.mx",
+      "industry": "E-commerce",
+      "city": "CDMX",
+      "employees": 3000,
+      "annualRevenue": 1800000000,
+      "score": 75,
+      "lastUpdated": "2026-07-26T18:34:18.552Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "María López",
+      "job_title": "Director de Distribución",
+      "email": "maría.lópez@mercadolibre.com.mx",
+      "phone": "+52 55 9265 4272",
+      "linkedin_url": "https://linkedin.com/in/maría-lópez",
+      "company_name": "Mercado Libre",
+      "company_domain": "mercadolibre.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.553Z"
+    },
+    "email": {
+      "to": "maría.lópez@mercadolibre.com.mx",
+      "subject": "María López: Reducir costos de última milla en Mercado Libre",
+      "body": "¡Hola María López!\n\nHace poco noté que trabajan en Mercado Libre en el área de director de distribución.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Mercado Libre probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola María López!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Mercado Libre</strong> en el área de <strong>Director de Distribución</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Mercado Libre probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "María López",
+        "contactRole": "Director de Distribución",
+        "companyName": "Mercado Libre",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Mercado Libre",
+      "domain": "mercadolibre.com.mx",
+      "industry": "E-commerce",
+      "city": "CDMX",
+      "employees": 3000,
+      "annualRevenue": 1800000000,
+      "score": 75,
+      "lastUpdated": "2026-07-26T18:34:18.552Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Carlos Martínez",
+      "job_title": "Director de Distribución",
+      "email": "carlos.martínez@mercadolibre.com.mx",
+      "phone": "+52 55 7435 3844",
+      "linkedin_url": "https://linkedin.com/in/carlos-martínez",
+      "company_name": "Mercado Libre",
+      "company_domain": "mercadolibre.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.553Z"
+    },
+    "email": {
+      "to": "carlos.martínez@mercadolibre.com.mx",
+      "subject": "Carlos Martínez: Reducir costos de última milla en Mercado Libre",
+      "body": "¡Hola Carlos Martínez!\n\nHace poco noté que trabajan en Mercado Libre en el área de director de distribución.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Mercado Libre probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Carlos Martínez!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Mercado Libre</strong> en el área de <strong>Director de Distribución</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Mercado Libre probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Carlos Martínez",
+        "contactRole": "Director de Distribución",
+        "companyName": "Mercado Libre",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Grupo Bimbo Logística",
+      "domain": "grupobimbo.com",
+      "industry": "Distribución & Logística",
+      "city": "CDMX",
+      "employees": 2000,
+      "annualRevenue": 1200000000,
+      "score": 80,
+      "lastUpdated": "2026-07-26T18:34:18.553Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Juan García",
+      "job_title": "Jefe de Almacén",
+      "email": "juan.garcía@grupobimbo.com",
+      "phone": "+52 55 9678 4787",
+      "linkedin_url": "https://linkedin.com/in/juan-garcía",
+      "company_name": "Grupo Bimbo Logística",
+      "company_domain": "grupobimbo.com",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "juan.garcía@grupobimbo.com",
+      "subject": "Solución logística para Grupo Bimbo Logística - Conversemos",
+      "body": "¡Hola Juan García!\n\nHace poco noté que trabajan en Grupo Bimbo Logística en el área de jefe de almacén.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Grupo Bimbo Logística probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Juan García!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Grupo Bimbo Logística</strong> en el área de <strong>Jefe de Almacén</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Grupo Bimbo Logística probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Juan García",
+        "contactRole": "Jefe de Almacén",
+        "companyName": "Grupo Bimbo Logística",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Grupo Bimbo Logística",
+      "domain": "grupobimbo.com",
+      "industry": "Distribución & Logística",
+      "city": "CDMX",
+      "employees": 2000,
+      "annualRevenue": 1200000000,
+      "score": 80,
+      "lastUpdated": "2026-07-26T18:34:18.553Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "María López",
+      "job_title": "Director de Logística",
+      "email": "maría.lópez@grupobimbo.com",
+      "phone": "+52 55 2105 6040",
+      "linkedin_url": "https://linkedin.com/in/maría-lópez",
+      "company_name": "Grupo Bimbo Logística",
+      "company_domain": "grupobimbo.com",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "maría.lópez@grupobimbo.com",
+      "subject": "Ahorro de hasta 30% en costos de distribución para Grupo Bimbo Logística",
+      "body": "¡Hola María López!\n\nHace poco noté que trabajan en Grupo Bimbo Logística en el área de director de logística.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Grupo Bimbo Logística probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola María López!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Grupo Bimbo Logística</strong> en el área de <strong>Director de Logística</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Grupo Bimbo Logística probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "María López",
+        "contactRole": "Director de Logística",
+        "companyName": "Grupo Bimbo Logística",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Grupo Bimbo Logística",
+      "domain": "grupobimbo.com",
+      "industry": "Distribución & Logística",
+      "city": "CDMX",
+      "employees": 2000,
+      "annualRevenue": 1200000000,
+      "score": 80,
+      "lastUpdated": "2026-07-26T18:34:18.553Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Carlos Martínez",
+      "job_title": "Director de Logística",
+      "email": "carlos.martínez@grupobimbo.com",
+      "phone": "+52 55 1000 5255",
+      "linkedin_url": "https://linkedin.com/in/carlos-martínez",
+      "company_name": "Grupo Bimbo Logística",
+      "company_domain": "grupobimbo.com",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "carlos.martínez@grupobimbo.com",
+      "subject": "Carlos Martínez: Reducir costos de última milla en Grupo Bimbo Logística",
+      "body": "¡Hola Carlos Martínez!\n\nHace poco noté que trabajan en Grupo Bimbo Logística en el área de director de logística.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Grupo Bimbo Logística probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Carlos Martínez!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Grupo Bimbo Logística</strong> en el área de <strong>Director de Logística</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Grupo Bimbo Logística probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Carlos Martínez",
+        "contactRole": "Director de Logística",
+        "companyName": "Grupo Bimbo Logística",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Femsa Distribución",
+      "domain": "femsa.com.mx",
+      "industry": "Retail & Logística",
+      "city": "CDMX",
+      "employees": 4500,
+      "annualRevenue": 2000000000,
+      "score": 80,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Juan García",
+      "job_title": "Jefe de Almacén",
+      "email": "juan.garcía@femsa.com.mx",
+      "phone": "+52 55 6877 4003",
+      "linkedin_url": "https://linkedin.com/in/juan-garcía",
+      "company_name": "Femsa Distribución",
+      "company_domain": "femsa.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "juan.garcía@femsa.com.mx",
+      "subject": "Ahorro de hasta 30% en costos de distribución para Femsa Distribución",
+      "body": "¡Hola Juan García!\n\nHace poco noté que trabajan en Femsa Distribución en el área de jefe de almacén.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Femsa Distribución probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Juan García!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Femsa Distribución</strong> en el área de <strong>Jefe de Almacén</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Femsa Distribución probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Juan García",
+        "contactRole": "Jefe de Almacén",
+        "companyName": "Femsa Distribución",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Femsa Distribución",
+      "domain": "femsa.com.mx",
+      "industry": "Retail & Logística",
+      "city": "CDMX",
+      "employees": 4500,
+      "annualRevenue": 2000000000,
+      "score": 80,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "María López",
+      "job_title": "Director de Distribución",
+      "email": "maría.lópez@femsa.com.mx",
+      "phone": "+52 55 7561 5204",
+      "linkedin_url": "https://linkedin.com/in/maría-lópez",
+      "company_name": "Femsa Distribución",
+      "company_domain": "femsa.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "maría.lópez@femsa.com.mx",
+      "subject": "María López, ¿cómo es tu logística última milla?",
+      "body": "¡Hola María López!\n\nHace poco noté que trabajan en Femsa Distribución en el área de director de distribución.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Femsa Distribución probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola María López!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Femsa Distribución</strong> en el área de <strong>Director de Distribución</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Femsa Distribución probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "María López",
+        "contactRole": "Director de Distribución",
+        "companyName": "Femsa Distribución",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Femsa Distribución",
+      "domain": "femsa.com.mx",
+      "industry": "Retail & Logística",
+      "city": "CDMX",
+      "employees": 4500,
+      "annualRevenue": 2000000000,
+      "score": 80,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Carlos Martínez",
+      "job_title": "Head of Ecommerce",
+      "email": "carlos.martínez@femsa.com.mx",
+      "phone": "+52 55 3270 6450",
+      "linkedin_url": "https://linkedin.com/in/carlos-martínez",
+      "company_name": "Femsa Distribución",
+      "company_domain": "femsa.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "carlos.martínez@femsa.com.mx",
+      "subject": "Carlos Martínez, ¿cómo es tu logística última milla?",
+      "body": "¡Hola Carlos Martínez!\n\nHace poco noté que trabajan en Femsa Distribución en el área de head of ecommerce.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Femsa Distribución probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Carlos Martínez!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Femsa Distribución</strong> en el área de <strong>Head of Ecommerce</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Femsa Distribución probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Carlos Martínez",
+        "contactRole": "Head of Ecommerce",
+        "companyName": "Femsa Distribución",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "DHL Express México",
+      "domain": "dhl.com.mx",
+      "industry": "Logística Internacional",
+      "city": "CDMX",
+      "employees": 1500,
+      "annualRevenue": 800000000,
+      "score": 80,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Juan García",
+      "job_title": "Director de Logística",
+      "email": "juan.garcía@dhl.com.mx",
+      "phone": "+52 55 4644 3956",
+      "linkedin_url": "https://linkedin.com/in/juan-garcía",
+      "company_name": "DHL Express México",
+      "company_domain": "dhl.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "juan.garcía@dhl.com.mx",
+      "subject": "Solución logística para DHL Express México - Conversemos",
+      "body": "¡Hola Juan García!\n\nHace poco noté que trabajan en DHL Express México en el área de director de logística.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en DHL Express México probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Juan García!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>DHL Express México</strong> en el área de <strong>Director de Logística</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en DHL Express México probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Juan García",
+        "contactRole": "Director de Logística",
+        "companyName": "DHL Express México",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "DHL Express México",
+      "domain": "dhl.com.mx",
+      "industry": "Logística Internacional",
+      "city": "CDMX",
+      "employees": 1500,
+      "annualRevenue": 800000000,
+      "score": 80,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "María López",
+      "job_title": "Head of Ecommerce",
+      "email": "maría.lópez@dhl.com.mx",
+      "phone": "+52 55 9392 8396",
+      "linkedin_url": "https://linkedin.com/in/maría-lópez",
+      "company_name": "DHL Express México",
+      "company_domain": "dhl.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "maría.lópez@dhl.com.mx",
+      "subject": "Ahorro de hasta 30% en costos de distribución para DHL Express México",
+      "body": "¡Hola María López!\n\nHace poco noté que trabajan en DHL Express México en el área de head of ecommerce.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en DHL Express México probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola María López!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>DHL Express México</strong> en el área de <strong>Head of Ecommerce</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en DHL Express México probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "María López",
+        "contactRole": "Head of Ecommerce",
+        "companyName": "DHL Express México",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "DHL Express México",
+      "domain": "dhl.com.mx",
+      "industry": "Logística Internacional",
+      "city": "CDMX",
+      "employees": 1500,
+      "annualRevenue": 800000000,
+      "score": 80,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Carlos Martínez",
+      "job_title": "Head of Ecommerce",
+      "email": "carlos.martínez@dhl.com.mx",
+      "phone": "+52 55 7130 5380",
+      "linkedin_url": "https://linkedin.com/in/carlos-martínez",
+      "company_name": "DHL Express México",
+      "company_domain": "dhl.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "carlos.martínez@dhl.com.mx",
+      "subject": "Ahorro de hasta 30% en costos de distribución para DHL Express México",
+      "body": "¡Hola Carlos Martínez!\n\nHace poco noté que trabajan en DHL Express México en el área de head of ecommerce.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en DHL Express México probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Carlos Martínez!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>DHL Express México</strong> en el área de <strong>Head of Ecommerce</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en DHL Express México probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Carlos Martínez",
+        "contactRole": "Head of Ecommerce",
+        "companyName": "DHL Express México",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Guadalajara Distribuidora",
+      "domain": "guadalajaradist.com.mx",
+      "industry": "Distribución",
+      "city": "Guadalajara",
+      "employees": 800,
+      "annualRevenue": 350000000,
+      "score": 40,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Juan García",
+      "job_title": "Head of Ecommerce",
+      "email": "juan.garcía@guadalajaradist.com.mx",
+      "phone": "+52 55 2002 8685",
+      "linkedin_url": "https://linkedin.com/in/juan-garcía",
+      "company_name": "Guadalajara Distribuidora",
+      "company_domain": "guadalajaradist.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "juan.garcía@guadalajaradist.com.mx",
+      "subject": "Ahorro de hasta 30% en costos de distribución para Guadalajara Distribuidora",
+      "body": "¡Hola Juan García!\n\nHace poco noté que trabajan en Guadalajara Distribuidora en el área de head of ecommerce.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Guadalajara Distribuidora probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Juan García!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Guadalajara Distribuidora</strong> en el área de <strong>Head of Ecommerce</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Guadalajara Distribuidora probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Juan García",
+        "contactRole": "Head of Ecommerce",
+        "companyName": "Guadalajara Distribuidora",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Guadalajara Distribuidora",
+      "domain": "guadalajaradist.com.mx",
+      "industry": "Distribución",
+      "city": "Guadalajara",
+      "employees": 800,
+      "annualRevenue": 350000000,
+      "score": 40,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "María López",
+      "job_title": "Head of Ecommerce",
+      "email": "maría.lópez@guadalajaradist.com.mx",
+      "phone": "+52 55 5957 7113",
+      "linkedin_url": "https://linkedin.com/in/maría-lópez",
+      "company_name": "Guadalajara Distribuidora",
+      "company_domain": "guadalajaradist.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "maría.lópez@guadalajaradist.com.mx",
+      "subject": "María López: Reducir costos de última milla en Guadalajara Distribuidora",
+      "body": "¡Hola María López!\n\nHace poco noté que trabajan en Guadalajara Distribuidora en el área de head of ecommerce.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Guadalajara Distribuidora probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola María López!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Guadalajara Distribuidora</strong> en el área de <strong>Head of Ecommerce</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Guadalajara Distribuidora probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "María López",
+        "contactRole": "Head of Ecommerce",
+        "companyName": "Guadalajara Distribuidora",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Guadalajara Distribuidora",
+      "domain": "guadalajaradist.com.mx",
+      "industry": "Distribución",
+      "city": "Guadalajara",
+      "employees": 800,
+      "annualRevenue": 350000000,
+      "score": 40,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Carlos Martínez",
+      "job_title": "Jefe de Almacén",
+      "email": "carlos.martínez@guadalajaradist.com.mx",
+      "phone": "+52 55 8430 2424",
+      "linkedin_url": "https://linkedin.com/in/carlos-martínez",
+      "company_name": "Guadalajara Distribuidora",
+      "company_domain": "guadalajaradist.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "carlos.martínez@guadalajaradist.com.mx",
+      "subject": "Ahorro de hasta 30% en costos de distribución para Guadalajara Distribuidora",
+      "body": "¡Hola Carlos Martínez!\n\nHace poco noté que trabajan en Guadalajara Distribuidora en el área de jefe de almacén.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Guadalajara Distribuidora probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Carlos Martínez!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Guadalajara Distribuidora</strong> en el área de <strong>Jefe de Almacén</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Guadalajara Distribuidora probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Carlos Martínez",
+        "contactRole": "Jefe de Almacén",
+        "companyName": "Guadalajara Distribuidora",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Supply Chain Monterrey",
+      "domain": "scmonterrey.com.mx",
+      "industry": "Supply Chain",
+      "city": "Monterrey",
+      "employees": 600,
+      "annualRevenue": 250000000,
+      "score": 40,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Juan García",
+      "job_title": "Head of Ecommerce",
+      "email": "juan.garcía@scmonterrey.com.mx",
+      "phone": "+52 55 2293 5871",
+      "linkedin_url": "https://linkedin.com/in/juan-garcía",
+      "company_name": "Supply Chain Monterrey",
+      "company_domain": "scmonterrey.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "juan.garcía@scmonterrey.com.mx",
+      "subject": "Ahorro de hasta 30% en costos de distribución para Supply Chain Monterrey",
+      "body": "¡Hola Juan García!\n\nHace poco noté que trabajan en Supply Chain Monterrey en el área de head of ecommerce.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Supply Chain Monterrey probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Juan García!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Supply Chain Monterrey</strong> en el área de <strong>Head of Ecommerce</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Supply Chain Monterrey probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Juan García",
+        "contactRole": "Head of Ecommerce",
+        "companyName": "Supply Chain Monterrey",
+        "generatedAt": "2026-07-26T18:34:18.555Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.555Z"
+  },
+  {
+    "company": {
+      "name": "Supply Chain Monterrey",
+      "domain": "scmonterrey.com.mx",
+      "industry": "Supply Chain",
+      "city": "Monterrey",
+      "employees": 600,
+      "annualRevenue": 250000000,
+      "score": 40,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "María López",
+      "job_title": "Head of Ecommerce",
+      "email": "maría.lópez@scmonterrey.com.mx",
+      "phone": "+52 55 7244 4142",
+      "linkedin_url": "https://linkedin.com/in/maría-lópez",
+      "company_name": "Supply Chain Monterrey",
+      "company_domain": "scmonterrey.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "maría.lópez@scmonterrey.com.mx",
+      "subject": "Solución logística para Supply Chain Monterrey - Conversemos",
+      "body": "¡Hola María López!\n\nHace poco noté que trabajan en Supply Chain Monterrey en el área de head of ecommerce.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Supply Chain Monterrey probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola María López!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Supply Chain Monterrey</strong> en el área de <strong>Head of Ecommerce</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Supply Chain Monterrey probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "María López",
+        "contactRole": "Head of Ecommerce",
+        "companyName": "Supply Chain Monterrey",
+        "generatedAt": "2026-07-26T18:34:18.556Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.556Z"
+  },
+  {
+    "company": {
+      "name": "Supply Chain Monterrey",
+      "domain": "scmonterrey.com.mx",
+      "industry": "Supply Chain",
+      "city": "Monterrey",
+      "employees": 600,
+      "annualRevenue": 250000000,
+      "score": 40,
+      "lastUpdated": "2026-07-26T18:34:18.554Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Carlos Martínez",
+      "job_title": "Jefe de Almacén",
+      "email": "carlos.martínez@scmonterrey.com.mx",
+      "phone": "+52 55 3532 4609",
+      "linkedin_url": "https://linkedin.com/in/carlos-martínez",
+      "company_name": "Supply Chain Monterrey",
+      "company_domain": "scmonterrey.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 100,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T18:34:18.554Z"
+    },
+    "email": {
+      "to": "carlos.martínez@scmonterrey.com.mx",
+      "subject": "Ahorro de hasta 30% en costos de distribución para Supply Chain Monterrey",
+      "body": "¡Hola Carlos Martínez!\n\nHace poco noté que trabajan en Supply Chain Monterrey en el área de jefe de almacén.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Supply Chain Monterrey probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Carlos Martínez!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Supply Chain Monterrey</strong> en el área de <strong>Jefe de Almacén</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Supply Chain Monterrey probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Carlos Martínez",
+        "contactRole": "Jefe de Almacén",
+        "companyName": "Supply Chain Monterrey",
+        "generatedAt": "2026-07-26T18:34:18.556Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T18:34:18.556Z"
+  }
+]

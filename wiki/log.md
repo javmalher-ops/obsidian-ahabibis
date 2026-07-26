@@ -31,3 +31,5 @@ para las últimas entradas.
 ## [2026-07-21] ingesta | Export de la app de Claude (34 conversaciones) respaldado en transcripciones/; ingeridas las de trabajo: pipeline comercial iMile, ICP/estrategia, cliente envia.com, jefe Allen, búsqueda de empleo 2026
 
 ## [2026-07-21] ingesta | Segunda pasada del export: prospectos adicionales (Liverpool, Grupo Axo/Marisol Esqueda, Pink Up, Banco Plata/Luis Alberto Macías), enlace envia.com↔Tendencys, entrevista y test de aptitud de Liverpool
+
+## [2026-07-26] desarrollo | CRM web fullstack: aplicación HTML5 + JavaScript + localStorage con dashboard, gestión de leads, filtros, búsqueda, sincronización laptop-celular. Datos precargados: 15+ leads del pipeline iMile. Accesible desde web (localhost:8000/crm/) y móvil en red local o vía Ngrok/server.

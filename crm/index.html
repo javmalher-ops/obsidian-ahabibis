@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMile CRM - Javier Malpica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --text: #1f2937;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        .toolbar {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .filters {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-content h2 {
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .leads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .lead-card {
+            background: white;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .lead-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+
+        .lead-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+
+        .lead-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .lead-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-active {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-prospecting {
+            background: #dbeafe;
+            color: #0c4a6e;
+        }
+
+        .status-negotiation {
+            background: #fef3c7;
+            color: #78350f;
+        }
+
+        .status-closed {
+            background: #fee2e2;
+            color: #7f1d1d;
+        }
+
+        .lead-info {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-bottom: 0.75rem;
+        }
+
+        .lead-info strong {
+            color: var(--text);
+        }
+
+        .lead-vertical {
+            display: inline-block;
+            background: var(--bg);
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .lead-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .lead-actions button {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .lead-actions button:hover {
+            background: var(--bg);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #6b7280;
+        }
+
+        .empty-state svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+        }
+
+        .search-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .sync-status {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: #6b7280;
+            z-index: 100;
+        }
+
+        .sync-status.synced {
+            color: var(--success);
+        }
+
+        .sync-status.error {
+            color: var(--danger);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.25rem;
+            }
+
+            .toolbar {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .filters {
+                overflow-x: auto;
+            }
+
+            .leads-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                width: 95%;
+                padding: 1.5rem;
+            }
+
+            .sync-status {
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📊 iMile CRM</h1>
+            <p>Pipeline comercial de Javier Malpica Herrera</p>
+
+            <div class="toolbar">
+                <input type="text" id="searchInput" class="search-input" placeholder="Buscar empresa, contacto...">
+                <button class="btn btn-primary" onclick="openAddLead()">+ Nuevo Lead</button>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" onclick="filterByStatus('all')">Todos</button>
+                <button class="filter-btn" onclick="filterByStatus('active')">Activos</button>
+                <button class="filter-btn" onclick="filterByStatus('prospecting')">Prospección</button>
+                <button class="filter-btn" onclick="filterByStatus('negotiation')">Negociación</button>
+                <button class="filter-btn" onclick="filterByStatus('closed')">Cerrados</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalLeads">0</div>
+                <div class="stat-label">Total de Leads</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="activeLeads">0</div>
+                <div class="stat-label">Activos</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="prospectingLeads">0</div>
+                <div class="stat-label">En Prospección</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="negotiationLeads">0</div>
+                <div class="stat-label">En Negociación</div>
+            </div>
+        </div>
+
+        <div id="leadsContainer" class="leads-grid"></div>
+
+        <div id="emptyState" class="empty-state" style="display:none;">
+            <p>No hay leads que mostrar</p>
+        </div>
+    </main>
+
+    <!-- Modal para agregar/editar leads -->
+    <div id="leadModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Nuevo Lead</h2>
+            <form id="leadForm">
+                <div class="form-group">
+                    <label for="leadCompany">Empresa *</label>
+                    <input type="text" id="leadCompany" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="leadContact">Contacto (nombre)</label>
+                    <input type="text" id="leadContact">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadRole">Cargo del contacto</label>
+                    <input type="text" id="leadRole">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadVertical">Vertical *</label>
+                    <input type="text" id="leadVertical" placeholder="ej: D2C, eCommerce, Fintech" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="leadStatus">Estado *</label>
+                    <select id="leadStatus" required>
+                        <option value="prospecting">Prospección</option>
+                        <option value="active">Activo</option>
+                        <option value="negotiation">Negociación</option>
+                        <option value="closed">Cerrado</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="leadEmail">Email</label>
+                    <input type="email" id="leadEmail">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadPhone">Teléfono</label>
+                    <input type="tel" id="leadPhone">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadNotes">Notas</label>
+                    <textarea id="leadNotes"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()" style="flex: 1;">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" style="flex: 1;">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="syncStatus" class="sync-status">
+        ⏱️ Sincronizando...
+    </div>
+
+    <script>
+        // Estado global
+        let leads = [];
+        let currentFilter = 'all';
+        let editingLeadId = null;
+
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', () => {
+            loadLeads();
+            setupEventListeners();
+            startAutoSync();
+            loadDefaultData();
+        });
+
+        // Cargar leads del localStorage
+        function loadLeads() {
+            const stored = localStorage.getItem('imile_crm_leads');
+            if (stored) {
+                leads = JSON.parse(stored);
+            }
+            renderLeads();
+            updateStats();
+        }
+
+        // Guardar leads
+        function saveLeads() {
+            localStorage.setItem('imile_crm_leads', JSON.stringify(leads));
+            updateSync();
+        }
+
+        // Cargar datos por defecto (pipeline de iMile)
+        function loadDefaultData() {
+            if (leads.length === 0) {
+                leads = [
+                    // Clientes activos
+                    { id: Date.now() + 1, company: 'envia.com', contact: 'Gabriel', role: 'Dueño', vertical: 'Agregador', status: 'active', email: '', phone: '', notes: 'Cliente activo, 73 paquetes. Mejora de tarifa conseguida. Busca escalar volumen.', lastUpdated: new Date().toISOString() },
+                    { id: Date.now() + 2, company: 'Basil', contact: 'Luis Alfonso Balbuena Silva', role: 'Director Comercial', vertical: 'Última milla', status: 'active', email: '', phone: '', notes: 'Cliente de última milla. Testimonial preparado.', lastUpdated: new Date().toISOString() },
+                    { id: Date.now() + 3, company: 'Multivende', contact: 'Valentina Atehortua', role: 'Head of Partnerships LatAm', vertical: 'eCommerce', status: 'negotiation', email: '', phone: '', notes: 'Integración en proceso. Pendiente firma de contrato de uso de logo.', lastUpdated: new Date().toISOString() },
+                    { id: Date.now() + 4, company: 'Doto', contact: 'Elie Braun', role: 'Contacto', vertical: 'eCommerce', status: 'negotiation', email: '', phone: '', notes: 'Integración estancada desde enero (sistemas).', lastUpdated: new Date().toISOString() },
+
+                    // Cuenta estratégica - Banco Plata
+                    { id: Date.now() + 5, company: 'Banco Plata', contact: 'Luis Alberto Macías Gómez', role: 'Director de Almacén / Logistics Manager', vertical: 'Fintech', status: 'prospecting', email: '', phone: '', notes: 'Contacto directo. Distribuye tarjetas físicas con Estafeta. Ángulo: mejor SLA en tarjetas.', lastUpdated: new Date().toISOString() },
+
+                    // Prospectos en seguimiento
+                    { id: Date.now() + 6, company: 'APYMSA', contact: 'Hilda Murillo, Francisco Ruiz', role: 'Contactos', vertical: 'Autopartes', status: 'negotiation', email: '', phone: '', notes: '2 sesiones previas. Evaluando propuestas.', lastUpdated: new Date().toISOString() },
+                    { id: Date.now() + 7, company: 'Platanomelón', contact: 'Axell (Grupo Axo)', role: 'Contacto', vertical: 'eCommerce', status: 'prospecting', email: '', phone: '', notes: 'Opera con 3PL vía almacén. Ofrecido esquema inplant.', lastUpdated: new Date().toISOString() },
+
+                    // Prospección fría - Moda/Calzado
+                    { id: Date.now() + 8, company: 'Price Shoes', contact: 'Jorge Pinzón', role: 'Director de Logística', vertical: 'Moda/Calzado', status: 'prospecting', email: '', phone: '', notes: 'Flota propia con quejas públicas. ICP: D2C alto volumen.', lastUpdated: new Date().toISOString() },
+                    { id: Date.now() + 9, company: 'Cklass', contact: '', role: '', vertical: 'Moda/Calzado', status: 'prospecting', email: '', phone: '', notes: 'ICP: D2C.', lastUpdated: new Date().toISOString() },
+                    { id: Date.now() + 10, company: 'Innova Sport', contact: 'Axel Valdés', role: '', vertical: 'Moda/Calzado', status: 'prospecting', email: '', phone: '', notes: 'ICP: D2C.', lastUpdated: new Date().toISOString() },
+
+                    // Electrónica
+                    { id: Date.now() + 11, company: 'Mega Audio', contact: 'Nathan Finkelstein', role: '', vertical: 'Electrónica', status: 'prospecting', email: '', phone: '', notes: 'ICP: Producto frágil, <0.01% daños.', lastUpdated: new Date().toISOString() },
+                    { id: Date.now() + 12, company: 'Cyberpuerta', contact: 'Jan Plessow, Cristian Miranda', role: '', vertical: 'Electrónica', status: 'prospecting', email: '', phone: '', notes: 'ICP: D2C alto volumen.', lastUpdated: new Date().toISOString() },
+
+                    // Belleza/venta directa
+                    { id: Date.now() + 13, company: 'Oriflame', contact: 'Mariana Rubio', role: '', vertical: 'Belleza', status: 'prospecting', email: '', phone: '', notes: 'ICP: Venta directa.', lastUpdated: new Date().toISOString() },
+                    { id: Date.now() + 14, company: 'Pink Up Cosmetics', contact: 'Natalia Gómez', role: 'Director Comercial', vertical: 'Belleza', status: 'prospecting', email: '', phone: '', notes: 'ICP: Belleza D2C.', lastUpdated: new Date().toISOString() },
+
+                    // Enterprise (fuera de ICP pero networking)
+                    { id: Date.now() + 15, company: 'Liverpool', contact: 'Ángel Bryan Meza', role: 'Gerente Multicarrier', vertical: 'Retail', status: 'prospecting', email: '', phone: '', notes: 'Empresa grande. Javier también postuló para empleo. Mejor fit: Ángel Bryan.', lastUpdated: new Date().toISOString() },
+                ];
+                saveLeads();
+            }
+        }
+
+        // Setup de eventos
+        function setupEventListeners() {
+            document.getElementById('leadForm').addEventListener('submit', saveLead);
+            document.getElementById('searchInput').addEventListener('input', filterLeads);
+        }
+
+        // Abrir modal para nuevo lead
+        function openAddLead() {
+            editingLeadId = null;
+            document.getElementById('modalTitle').textContent = 'Nuevo Lead';
+            document.getElementById('leadForm').reset();
+            document.getElementById('leadModal').classList.add('active');
+        }
+
+        // Cerrar modal
+        function closeModal() {
+            document.getElementById('leadModal').classList.remove('active');
+        }
+
+        // Guardar lead
+        function saveLead(e) {
+            e.preventDefault();
+
+            const formData = {
+                company: document.getElementById('leadCompany').value,
+                contact: document.getElementById('leadContact').value,
+                role: document.getElementById('leadRole').value,
+                vertical: document.getElementById('leadVertical').value,
+                status: document.getElementById('leadStatus').value,
+                email: document.getElementById('leadEmail').value,
+                phone: document.getElementById('leadPhone').value,
+                notes: document.getElementById('leadNotes').value,
+                lastUpdated: new Date().toISOString()
+            };
+
+            if (editingLeadId) {
+                const lead = leads.find(l => l.id === editingLeadId);
+                Object.assign(lead, formData);
+            } else {
+                leads.unshift({ id: Date.now(), ...formData });
+            }
+
+            saveLeads();
+            renderLeads();
+            updateStats();
+            closeModal();
+        }
+
+        // Editar lead
+        function editLead(id) {
+            editingLeadId = id;
+            const lead = leads.find(l => l.id === id);
+
+            document.getElementById('modalTitle').textContent = 'Editar Lead';
+            document.getElementById('leadCompany').value = lead.company;
+            document.getElementById('leadContact').value = lead.contact;
+            document.getElementById('leadRole').value = lead.role;
+            document.getElementById('leadVertical').value = lead.vertical;
+            document.getElementById('leadStatus').value = lead.status;
+            document.getElementById('leadEmail').value = lead.email;
+            document.getElementById('leadPhone').value = lead.phone;
+            document.getElementById('leadNotes').value = lead.notes;
+
+            document.getElementById('leadModal').classList.add('active');
+        }
+
+        // Eliminar lead
+        function deleteLead(id) {
+            if (confirm('¿Eliminar este lead?')) {
+                leads = leads.filter(l => l.id !== id);
+                saveLeads();
+                renderLeads();
+                updateStats();
+            }
+        }
+
+        // Filtrar por estado
+        function filterByStatus(status) {
+            currentFilter = status;
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            renderLeads();
+        }
+
+        // Filtrar por búsqueda
+        function filterLeads() {
+            renderLeads();
+        }
+
+        // Renderizar leads
+        function renderLeads() {
+            const container = document.getElementById('leadsContainer');
+            const emptyState = document.getElementById('emptyState');
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+            let filtered = leads;
+
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(l => l.status === currentFilter);
+            }
+
+            if (searchTerm) {
+                filtered = filtered.filter(l =>
+                    l.company.toLowerCase().includes(searchTerm) ||
+                    l.contact.toLowerCase().includes(searchTerm) ||
+                    l.vertical.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            if (filtered.length === 0) {
+                container.innerHTML = '';
+                emptyState.style.display = 'block';
+                return;
+            }
+
+            emptyState.style.display = 'none';
+            container.innerHTML = filtered.map(lead => `
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">${lead.company}</div>
+                        <span class="lead-status status-${lead.status}">${lead.status}</span>
+                    </div>
+
+                    ${lead.contact ? `<div class="lead-info"><strong>Contacto:</strong> ${lead.contact} ${lead.role ? '(' + lead.role + ')' : ''}</div>` : ''}
+                    ${lead.vertical ? `<div><span class="lead-vertical">${lead.vertical}</span></div>` : ''}
+
+                    ${lead.email ? `<div class="lead-info"><strong>Email:</strong> ${lead.email}</div>` : ''}
+                    ${lead.phone ? `<div class="lead-info"><strong>Teléfono:</strong> ${lead.phone}</div>` : ''}
+
+                    ${lead.notes ? `<div class="lead-info"><strong>Notas:</strong> ${lead.notes}</div>` : ''}
+
+                    <div class="lead-actions">
+                        <button onclick="editLead(${lead.id})">✏️ Editar</button>
+                        <button onclick="deleteLead(${lead.id})">🗑️ Eliminar</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Actualizar estadísticas
+        function updateStats() {
+            document.getElementById('totalLeads').textContent = leads.length;
+            document.getElementById('activeLeads').textContent = leads.filter(l => l.status === 'active').length;
+            document.getElementById('prospectingLeads').textContent = leads.filter(l => l.status === 'prospecting').length;
+            document.getElementById('negotiationLeads').textContent = leads.filter(l => l.status === 'negotiation').length;
+        }
+
+        // Auto-sync cada 30 segundos
+        function startAutoSync() {
+            setInterval(() => {
+                updateSync();
+            }, 30000);
+        }
+
+        // Actualizar estado de sincronización
+        function updateSync() {
+            const syncEl = document.getElementById('syncStatus');
+            syncEl.textContent = '✓ Sincronizado';
+            syncEl.classList.add('synced');
+            syncEl.classList.remove('error');
+
+            setTimeout(() => {
+                syncEl.textContent = '⏱️ Sincronizando...';
+                syncEl.classList.remove('synced');
+            }, 3000);
+        }
+
+        // Cerrar modal al hacer click fuera
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('leadModal');
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

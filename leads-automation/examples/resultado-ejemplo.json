@@ -1,0 +1,82 @@
+[
+  {
+    "company": {
+      "name": "Amazon México Logistics",
+      "domain": "amazon.com.mx",
+      "industry": "E-commerce & Logística",
+      "city": "CDMX",
+      "employees": 5000,
+      "annualRevenue": 2500000000,
+      "score": 95,
+      "lastUpdated": "2026-07-26T10:30:00.000Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "Juan García",
+      "job_title": "Director de Logística",
+      "email": "juan.garcia@amazon.com.mx",
+      "phone": "+52 55 1234 5678",
+      "linkedin_url": "https://linkedin.com/in/juan-garcia",
+      "company_name": "Amazon México Logistics",
+      "company_domain": "amazon.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 95,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T10:30:00.000Z"
+    },
+    "email": {
+      "to": "juan.garcia@amazon.com.mx",
+      "subject": "Juan: Reducir costos de última milla en Amazon México",
+      "body": "¡Hola Juan!\n\nHace poco noté que trabajan en Amazon México Logistics en el área de Director de Logística.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Amazon México probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n    .container { max-width: 600px; margin: 0 auto; }\n    .header { background: #002d5b; color: white; padding: 20px; border-radius: 5px 5px 0 0; }\n    .content { padding: 20px; background: #f9f9f9; }\n    .benefits { margin: 15px 0; }\n    .benefit-item { margin: 10px 0; padding-left: 20px; }\n    .cta { margin-top: 20px; }\n    .button { background: #002d5b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }\n    .footer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>¡Hola Juan!</h1>\n    </div>\n    <div class=\"content\">\n      <p>Hace poco noté que trabajan en <strong>Amazon México Logistics</strong> en el área de <strong>Director de Logística</strong>.</p>\n\n      <p>En <strong>iMile</strong> ayudamos a empresas como la tuya a optimizar su logística de última milla.</p>\n\n      <div class=\"benefits\">\n        <h3>Lo que logramos:</h3>\n        <div class=\"benefit-item\">✓ Reducimos costos operativos entre 20-30%</div>\n        <div class=\"benefit-item\">✓ Mejoramos tiempos de entrega en un promedio de 40%</div>\n        <div class=\"benefit-item\">✓ Automatizamos procesos manuales con IA</div>\n      </div>\n\n      <p>Sabemos que en Amazon México probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.</p>\n\n      <div class=\"cta\">\n        <p><strong>¿Te parece bien una llamada de 15 minutos la próxima semana?</strong></p>\n        <a href=\"https://calendly.com/javmalher\" class=\"button\">Agendar conversación</a>\n      </div>\n\n      <div class=\"footer\">\n        <p><strong>Javier Malher</strong><br>\n        iMile Delivery México<br>\n        javmalher@gmail.com<br>\n        <a href=\"https://imile.mx\">www.imile.mx</a></p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>",
+      "metadata": {
+        "contactName": "Juan García",
+        "contactRole": "Director de Logística",
+        "companyName": "Amazon México Logistics",
+        "generatedAt": "2026-07-26T10:30:00.000Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T10:30:00.000Z"
+  },
+  {
+    "company": {
+      "name": "Mercado Libre",
+      "domain": "mercadolibre.com.mx",
+      "industry": "E-commerce",
+      "city": "CDMX",
+      "employees": 3000,
+      "annualRevenue": 1800000000,
+      "score": 90,
+      "lastUpdated": "2026-07-26T10:30:00.000Z",
+      "readyForOutreach": true
+    },
+    "contact": {
+      "name": "María López",
+      "job_title": "Directora de Operaciones",
+      "email": "maria.lopez@mercadolibre.com.mx",
+      "phone": "+52 55 2345 6789",
+      "linkedin_url": "https://linkedin.com/in/maria-lopez",
+      "company_name": "Mercado Libre",
+      "company_domain": "mercadolibre.com.mx",
+      "verified_email": true,
+      "enrichmentScore": 92,
+      "readyForEmail": true,
+      "lastEnriched": "2026-07-26T10:30:00.000Z"
+    },
+    "email": {
+      "to": "maria.lopez@mercadolibre.com.mx",
+      "subject": "Solución logística para Mercado Libre - Conversemos",
+      "body": "¡Hola María!\n\nHace poco noté que trabajan en Mercado Libre en el área de Directora de Operaciones.\n\nEn iMile ayudamos a empresas como la tuya a optimizar su logística de última milla. Específicamente:\n\n• Reducimos costos operativos entre 20-30%\n• Mejoramos tiempos de entrega en un promedio de 40%\n• Automatizamos procesos manuales con IA\n\nSabemos que en Mercado Libre probablemente están buscando formas de mejorar la eficiencia logística. Nos encantaría platicar brevemente sobre cómo otras empresas de tu tamaño lo están logrando.\n\n¿Te parece bien una llamada de 15 minutos la próxima semana?\n\n¡Saludos!\nJavier Malher\niMile Delivery México\njavmalher@gmail.com",
+      "htmlBody": "<!DOCTYPE html>...",
+      "metadata": {
+        "contactName": "María López",
+        "contactRole": "Directora de Operaciones",
+        "companyName": "Mercado Libre",
+        "generatedAt": "2026-07-26T10:30:00.000Z"
+      }
+    },
+    "status": "ready",
+    "createdAt": "2026-07-26T10:30:00.000Z"
+  }
+]

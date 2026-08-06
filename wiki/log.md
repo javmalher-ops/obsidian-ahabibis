@@ -31,3 +31,5 @@ para las últimas entradas.
 ## [2026-07-21] ingesta | Export de la app de Claude (34 conversaciones) respaldado en transcripciones/; ingeridas las de trabajo: pipeline comercial iMile, ICP/estrategia, cliente envia.com, jefe Allen, búsqueda de empleo 2026
 
 ## [2026-07-21] ingesta | Segunda pasada del export: prospectos adicionales (Liverpool, Grupo Axo/Marisol Esqueda, Pink Up, Banco Plata/Luis Alberto Macías), enlace envia.com↔Tendencys, entrevista y test de aptitud de Liverpool
+
+## [2026-08-06] sesion | Instalación de Claude Code en la MacBook (v2.1.222 en ~/.local/bin) para usar Remote Control desde el celular; pendiente el /login y sin diagnosticar la falta de sincronización de conversaciones en la app móvil

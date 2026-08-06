@@ -120,6 +120,9 @@ _Aún no hay comparaciones archivadas._
 
 - [[sesiones/2026-07-21 Configuracion Inicial y Primera Ingesta|Sesión 2026-07-21]]
   — configuración inicial de la wiki y primera ronda completa de ingesta.
+- [[sesiones/2026-08-06 Claude Code en la MacBook y Remote Control|Sesión 2026-08-06]]
+  — sesión técnica: instalación de Claude Code en la MacBook y Remote Control
+  desde el celular (quedó pendiente el login).
 
 ## Respaldos (fuera de la wiki)
 

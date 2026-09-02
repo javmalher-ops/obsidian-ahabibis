@@ -31,3 +31,13 @@ para las últimas entradas.
 ## [2026-07-21] ingesta | Export de la app de Claude (34 conversaciones) respaldado en transcripciones/; ingeridas las de trabajo: pipeline comercial iMile, ICP/estrategia, cliente envia.com, jefe Allen, búsqueda de empleo 2026
 
 ## [2026-07-21] ingesta | Segunda pasada del export: prospectos adicionales (Liverpool, Grupo Axo/Marisol Esqueda, Pink Up, Banco Plata/Luis Alberto Macías), enlace envia.com↔Tendencys, entrevista y test de aptitud de Liverpool
+
+## [2026-09-02] revision | CRM Shipio reconstruido y publicado como app
+
+Diagnóstico del acceso perdido: el repo `javmalher-ops/crm-shipio` existe pero
+está vacío (0 commits) — la versión de jul–ago 2026 se construyó dentro de la
+computadora local y el código nunca se subió, así que nunca hubo una URL que
+abrir. Reconstruido desde cero como app publicada con base de datos propia y
+export CSV, sembrada con las 24 cuentas de [[Prospeccion-y-Pipeline-iMile]] y el
+batch de `prospeccion-diaria/`. Código versionado en `crm-shipio/shipio.html`
+para que no dependa otra vez de una máquina local.

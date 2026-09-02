@@ -1,0 +1,1101 @@
+<title>Shipio</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#E8EDEF;
+  --surface:#FFFFFF;
+  --surface-2:#F2F5F6;
+  --ink:#101A1F;
+  --ink-2:#33454E;
+  --muted:#5F707A;
+  --line:#D2DBDF;
+  --line-2:#BAC7CD;
+  --petrol:#0B6260;
+  --petrol-ink:#08514F;
+  --petrol-soft:#DBEBEA;
+  --amber:#9E6408;
+  --amber-soft:#F6EBD8;
+  --verde:#226C4A;
+  --verde-soft:#DCEBE3;
+  --rojo:#A03B34;
+  --rojo-soft:#F5E1DF;
+  --focus:#0B6260;
+  --shadow-sm:0 1px 2px rgba(14,30,36,.07);
+  --shadow-md:0 2px 4px rgba(14,30,36,.06), 0 16px 32px -20px rgba(14,30,36,.30);
+  --radius:6px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1215;
+    --surface:#151E22;
+    --surface-2:#1B262B;
+    --ink:#E3EAED;
+    --ink-2:#B9C7CD;
+    --muted:#8496A0;
+    --line:#243238;
+    --line-2:#33454E;
+    --petrol:#4EAAA4;
+    --petrol-ink:#7CC8C2;
+    --petrol-soft:#12312F;
+    --amber:#DDA24F;
+    --amber-soft:#332616;
+    --verde:#5CB185;
+    --verde-soft:#152C22;
+    --rojo:#E0776D;
+    --rojo-soft:#331917;
+    --focus:#4EAAA4;
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+    --shadow-md:0 2px 4px rgba(0,0,0,.3), 0 16px 32px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1215;
+  --surface:#151E22;
+  --surface-2:#1B262B;
+  --ink:#E3EAED;
+  --ink-2:#B9C7CD;
+  --muted:#8496A0;
+  --line:#243238;
+  --line-2:#33454E;
+  --petrol:#4EAAA4;
+  --petrol-ink:#7CC8C2;
+  --petrol-soft:#12312F;
+  --amber:#DDA24F;
+  --amber-soft:#332616;
+  --verde:#5CB185;
+  --verde-soft:#152C22;
+  --rojo:#E0776D;
+  --rojo-soft:#331917;
+  --focus:#4EAAA4;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow-md:0 2px 4px rgba(0,0,0,.3), 0 16px 32px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
+  font-size:14px;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+
+/* ---------- Estructura ---------- */
+.app{max-width:1520px;margin:0 auto;padding:0 20px 96px}
+
+.topbar{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  padding:22px 0 16px;border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{display:block;flex:0 0 auto}
+.brand h1{
+  margin:0;font-size:25px;font-weight:700;letter-spacing:-.02em;line-height:1;
+}
+.brand .sub{margin:4px 0 0;font-size:12.5px;color:var(--muted);letter-spacing:.005em}
+.topbar-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+button{font-family:inherit;font-size:13px;cursor:pointer}
+.btn{
+  border:1px solid var(--line-2);background:var(--surface);color:var(--ink);
+  padding:8px 13px;border-radius:var(--radius);font-weight:500;
+  transition:background .12s ease,border-color .12s ease;
+}
+.btn:hover{background:var(--surface-2);border-color:var(--muted)}
+.btn-primary{background:var(--petrol);border-color:var(--petrol);color:#fff}
+.btn-primary:hover{background:var(--petrol-ink);border-color:var(--petrol-ink)}
+:root[data-theme="dark"] .btn-primary,
+:root:not([data-theme="light"]) .btn-primary{color:#07211F}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .btn-primary{color:#fff}}
+.btn-riesgo{color:var(--rojo);border-color:var(--rojo)}
+.btn-riesgo:hover{background:var(--rojo-soft);border-color:var(--rojo)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+
+/* ---------- Aviso ---------- */
+.aviso{
+  margin:14px 0 0;padding:10px 14px;border-left:3px solid var(--amber);
+  background:var(--amber-soft);color:var(--ink-2);font-size:13px;border-radius:0 var(--radius) var(--radius) 0;
+}
+
+/* ---------- Riel de indicadores ---------- */
+.kpis{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  border-bottom:1px solid var(--line);
+}
+.kpi{padding:16px 20px 15px;border-right:1px solid var(--line)}
+.kpi:last-child{border-right:0}
+.kpi .k-label{
+  margin:0;font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);
+}
+.kpi .k-num{
+  margin:5px 0 0;font-size:30px;font-weight:600;letter-spacing:-.025em;line-height:1;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;
+}
+.kpi .k-note{margin:5px 0 0;font-size:11.5px;color:var(--muted)}
+.kpi.alerta .k-num{color:var(--amber)}
+.kpi.alerta .k-label::after{
+  content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
+  background:var(--amber);margin-left:6px;vertical-align:middle;
+}
+
+/* ---------- Controles ---------- */
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:14px 0}
+.buscar{position:relative;flex:1 1 260px;min-width:200px}
+.buscar input{width:100%;padding-left:32px}
+.buscar svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted)}
+input,select,textarea{
+  font-family:inherit;font-size:13px;color:var(--ink);background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--radius);padding:7px 10px;
+}
+input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
+select{padding-right:26px}
+textarea{resize:vertical;line-height:1.5}
+
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+.chip{
+  border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);
+  padding:6px 11px;border-radius:100px;font-size:12.5px;white-space:nowrap;font-weight:500;
+}
+.chip[aria-pressed="true"]{background:var(--petrol);border-color:var(--petrol);color:#fff}
+:root[data-theme="dark"] .chip[aria-pressed="true"]{color:#07211F}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .chip[aria-pressed="true"]{color:#07211F}}
+.chip .n{font-family:"IBM Plex Mono",monospace;font-size:11px;opacity:.72;margin-left:5px}
+
+.vista-toggle{display:flex;border:1px solid var(--line-2);border-radius:var(--radius);overflow:hidden}
+.vista-toggle button{
+  border:0;background:var(--surface);color:var(--ink-2);padding:7px 14px;font-weight:500;
+}
+.vista-toggle button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* ---------- Vista lista ---------- */
+.lista{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.lista-head,.fila{
+  display:grid;
+  grid-template-columns:minmax(160px,2fr) 62px minmax(90px,1fr) minmax(110px,1.4fr) 128px 92px minmax(130px,1.5fr);
+  gap:14px;align-items:center;padding:11px 16px;
+}
+.lista-head{
+  border-bottom:1px solid var(--line);background:var(--surface-2);
+  font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+}
+.fila{border-bottom:1px solid var(--line);text-align:left;background:none;border-left:0;border-right:0;border-top:0;width:100%;font-size:13px;color:var(--ink)}
+.fila:last-child{border-bottom:0}
+.fila:hover{background:var(--surface-2)}
+.fila .empresa{font-weight:600;letter-spacing:-.005em}
+.fila .sub{display:block;font-size:11.5px;color:var(--muted);margin-top:1px}
+.col-num{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:12.5px}
+.lista-head .col-num{text-align:right}
+.truncar{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fila .c-meta,.fila .c-senal{display:none}
+
+/* ---------- Vista tablero ---------- */
+.tablero{display:flex;gap:12px;overflow-x:auto;padding-bottom:12px;align-items:flex-start}
+.columna{flex:0 0 268px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.col-head{
+  display:flex;align-items:baseline;gap:8px;padding:11px 13px;border-bottom:1px solid var(--line);
+}
+.col-head .paso{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--muted);
+  border:1px solid var(--line-2);border-radius:3px;padding:0 4px;line-height:1.5;
+}
+.col-head h3{margin:0;font-size:12.5px;font-weight:600;letter-spacing:.01em;flex:1}
+.col-head .cuenta{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted)}
+.col-body{display:flex;flex-direction:column;gap:8px;padding:10px;min-height:56px}
+.tarjeta{
+  text-align:left;width:100%;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:5px;padding:10px 11px;color:var(--ink);font-size:13px;
+}
+.tarjeta:hover{border-color:var(--line-2)}
+.tarjeta .t-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.tarjeta .t-nom{font-weight:600;letter-spacing:-.005em;line-height:1.3}
+.tarjeta .t-meta{margin:5px 0 0;font-size:11.5px;color:var(--muted)}
+.tarjeta .t-senal{
+  margin:8px 0 0;font-size:12px;color:var(--ink-2);line-height:1.4;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.avanzar{
+  flex:0 0 auto;border:1px solid var(--line-2);background:var(--surface);color:var(--muted);
+  width:24px;height:24px;border-radius:4px;line-height:1;font-size:13px;padding:0;
+}
+.avanzar:hover{color:var(--petrol);border-color:var(--petrol)}
+.col-vacia{padding:12px 11px;font-size:12px;color:var(--muted);font-style:italic}
+
+/* ---------- Etiquetas de estado ---------- */
+.pill{
+  display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:500;
+  padding:2.5px 8px;border-radius:100px;white-space:nowrap;
+  background:var(--surface-2);color:var(--ink-2);border:1px solid var(--line);
+}
+.pill.e-avanzada{background:var(--petrol-soft);color:var(--petrol);border-color:transparent}
+.pill.e-cliente{background:var(--verde-soft);color:var(--verde);border-color:transparent}
+.pill.e-perdido{background:var(--rojo-soft);color:var(--rojo);border-color:transparent}
+.pill.verificar{background:var(--amber-soft);color:var(--amber);border-color:transparent}
+.tag-modelo{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;color:var(--muted);
+  border:1px solid var(--line-2);border-radius:3px;padding:1px 4px;
+}
+
+/* ---------- Panel de detalle ---------- */
+.scrim{position:fixed;inset:0;background:rgba(8,18,22,.42);z-index:20;border:0}
+.panel{
+  position:fixed;top:0;right:0;bottom:0;width:min(468px,100%);z-index:21;
+  background:var(--surface);border-left:1px solid var(--line);box-shadow:var(--shadow-md);
+  display:flex;flex-direction:column;
+}
+.panel-head{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+  padding:16px 20px;border-bottom:1px solid var(--line);
+}
+.panel-head h2{margin:0;font-size:17px;font-weight:600;letter-spacing:-.015em}
+.panel-head .p-sub{margin:3px 0 0;font-size:12px;color:var(--muted)}
+.panel-body{flex:1;overflow-y:auto;padding:4px 20px 20px}
+.panel-pie{display:flex;gap:8px;justify-content:space-between;padding:12px 20px;border-top:1px solid var(--line);background:var(--surface-2)}
+.cerrar{border:0;background:none;color:var(--muted);font-size:22px;line-height:1;padding:2px 6px;border-radius:4px}
+.cerrar:hover{color:var(--ink);background:var(--surface-2)}
+
+fieldset{border:0;padding:0;margin:20px 0 0}
+fieldset legend{
+  font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);
+  padding:0 0 8px;width:100%;border-bottom:1px solid var(--line);margin-bottom:12px;
+}
+.campos{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.campo{display:flex;flex-direction:column;gap:4px;min-width:0}
+.campo.ancho{grid-column:1 / -1}
+.campo label{font-size:11.5px;font-weight:500;color:var(--ink-2)}
+.campo .pista{font-size:11px;color:var(--muted)}
+.campo input,.campo select,.campo textarea{width:100%}
+
+.toast{
+  position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:40;
+  background:var(--ink);color:var(--paper);padding:9px 16px;border-radius:100px;
+  font-size:13px;box-shadow:var(--shadow-md);max-width:90vw;
+}
+.toast.err{background:var(--rojo);color:#fff}
+
+.pie{padding:22px 2px 0;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);margin-top:24px;line-height:1.6}
+
+@media (max-width:900px){
+  .app{padding:0 14px 80px}
+  .kpis{grid-template-columns:1fr 1fr}
+  .kpi{border-bottom:1px solid var(--line)}
+  .kpi:nth-child(2){border-right:0}
+  .kpi:nth-child(3),.kpi:nth-child(4){border-bottom:0}
+  .lista-head{display:none}
+  .fila{
+    grid-template-columns:1fr auto;
+    grid-template-areas:"emp etapa" "meta meta" "sen sen";
+    gap:5px 12px;padding:13px 14px;
+  }
+  .fila .c-vol{display:none}
+  .fila .c-empresa{grid-area:emp;min-width:0}
+  .fila .c-etapa{grid-area:etapa;justify-self:end}
+  .fila .c-meta{display:block;grid-area:meta;font-size:12px;color:var(--muted)}
+  .fila .c-senal{display:block;grid-area:sen;font-size:12px;color:var(--ink-2);white-space:normal}
+  .fila .c-oculto{display:none}
+  .campos{grid-template-columns:1fr}
+  .panel{width:100%;top:auto;height:92vh;border-left:0;border-top:1px solid var(--line);border-radius:10px 10px 0 0}
+  .brand h1{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 3.2 28.4 9v14L16 28.8 3.6 23V9L16 3.2Z" stroke="var(--petrol)" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M3.6 9 16 14.8 28.4 9M16 14.8v14" stroke="var(--petrol)" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M9.8 6.1 22.2 11.9" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <h1>Shipio</h1>
+        <p class="sub">Pipeline comercial · iMile Delivery México</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn" id="btn-csv">Exportar CSV</button>
+      <button class="btn btn-primary" id="btn-nueva">Nueva cuenta</button>
+    </div>
+  </header>
+
+  <p class="aviso" id="aviso" hidden></p>
+
+  <section class="kpis" id="kpis" aria-label="Resumen del pipeline"></section>
+
+  <section class="controls">
+    <div class="buscar">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <circle cx="7" cy="7" r="4.6" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M10.4 10.4 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <input type="search" id="q" placeholder="Buscar empresa, contacto, industria o señal" aria-label="Buscar">
+    </div>
+    <select id="f-plaza" aria-label="Filtrar por plaza de origen"></select>
+    <select id="f-modelo" aria-label="Filtrar por modelo de negocio">
+      <option value="">Todos los modelos</option>
+      <option value="B2C">B2C</option>
+      <option value="B2B">B2B</option>
+      <option value="B2B2C">B2B2C</option>
+    </select>
+    <div class="vista-toggle" role="group" aria-label="Cambiar vista">
+      <button id="v-lista" aria-pressed="true">Lista</button>
+      <button id="v-tablero" aria-pressed="false">Tablero</button>
+    </div>
+  </section>
+
+  <div class="chips" id="chips" role="group" aria-label="Filtrar por etapa"></div>
+
+  <main id="vista" style="margin-top:14px"></main>
+
+  <footer class="pie" id="pie"></footer>
+</div>
+
+<button class="scrim" id="scrim" hidden aria-label="Cerrar panel"></button>
+<aside class="panel" id="panel" hidden aria-label="Detalle de cuenta">
+  <div class="panel-head">
+    <div>
+      <h2 id="panel-titulo">Cuenta</h2>
+      <p class="p-sub" id="panel-sub"></p>
+    </div>
+    <button class="cerrar" id="btn-cerrar" aria-label="Cerrar">×</button>
+  </div>
+  <div class="panel-body"><form id="form"></form></div>
+  <div class="panel-pie">
+    <button class="btn btn-riesgo" id="btn-borrar" type="button">Eliminar</button>
+    <button class="btn btn-primary" id="btn-guardar" type="button">Guardar</button>
+  </div>
+</aside>
+
+<datalist id="dl-plazas">
+  <option value="CDMX"></option><option value="Estado de México"></option>
+  <option value="Guadalajara (ZMG)"></option><option value="Monterrey (ZMM)"></option>
+  <option value="Puebla (ZM)"></option>
+</datalist>
+<datalist id="dl-couriers">
+  <option value="Estafeta"></option><option value="DHL"></option><option value="FedEx"></option>
+  <option value="99 Minutos"></option><option value="Paquetexpress"></option><option value="UPS"></option>
+  <option value="Flota propia"></option><option value="Multi-carrier"></option><option value="Sin definir"></option>
+</datalist>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- Modelo ---------------- */
+
+  var ETAPAS = [
+    {id:"prospecto",  nom:"Prospecto",      paso:"1"},
+    {id:"contactado", nom:"Contactado",     paso:"2"},
+    {id:"reunion",    nom:"Reunión",        paso:"3"},
+    {id:"propuesta",  nom:"Propuesta",      paso:"4", avanzada:true},
+    {id:"negociacion",nom:"Negociación",    paso:"5", avanzada:true},
+    {id:"cliente",    nom:"Cliente activo", paso:"6", cerrada:true},
+    {id:"perdido",    nom:"Perdido",        paso:"—", cerrada:true}
+  ];
+  var ETAPA_POR_ID = {};
+  ETAPAS.forEach(function(e){ ETAPA_POR_ID[e.id] = e; });
+
+  /* Orden de lectura: lo ganado arriba, lo perdido hasta el final. */
+  var RANGO = {cliente:0, negociacion:1, propuesta:2, reunion:3, contactado:4, prospecto:5, perdido:6};
+
+  function etapaClase(id){
+    var e = ETAPA_POR_ID[id];
+    if(!e) return "";
+    if(e.id === "cliente") return "e-cliente";
+    if(e.id === "perdido") return "e-perdido";
+    if(e.avanzada) return "e-avanzada";
+    return "";
+  }
+
+  var CAMPOS_VACIOS = {
+    empresa:"", modelo:"B2C", ciudad:"", industria:"", etapa:"prospecto",
+    volumen:null, courier:"", sla:"", senal:"", senalFecha:"",
+    contactoNombre:"", contactoCargo:"", contactoLinkedin:"", contactoEmail:"", contactoTelefono:"",
+    angulo:"", proxima:"", proximaNota:"", notas:"", fecha:""
+  };
+
+  function normalizar(d){
+    var r = {}, k;
+    for(k in CAMPOS_VACIOS){ if(Object.prototype.hasOwnProperty.call(CAMPOS_VACIOS,k)){ r[k] = CAMPOS_VACIOS[k]; } }
+    if(d){ for(k in CAMPOS_VACIOS){ if(d[k] !== undefined && d[k] !== null){ r[k] = d[k]; } } }
+    if(!ETAPA_POR_ID[r.etapa]) r.etapa = "prospecto";
+    r.volumen = (r.volumen === "" || r.volumen === null || isNaN(Number(r.volumen))) ? null : Number(r.volumen);
+    return r;
+  }
+
+  /* Semilla: pipeline real consolidado del vault (jul 2026).
+     Los contactos sin correo/teléfono confirmado quedan marcados "Por verificar". */
+  var HOY_SEMILLA = "2026-07-21";
+  var SEMILLA = [
+    {id:"envia-com", empresa:"envia.com", modelo:"B2B2C", ciudad:"Monterrey (ZMM)", industria:"Agregador multi-courier", etapa:"cliente",
+     senal:"Dirección Comercial autorizó mejora de tarifa; el objetivo es escalar share of wallet entre los sellers del agregador.", senalFecha:"2026-07-03",
+     contactoNombre:"Gabriel", contactoCargo:"Dueño",
+     angulo:"Ganar volumen dentro de los sellers del agregador, no solo la cuenta madre.",
+     notas:"Ligado a Tendencys Innovations (envia.com es su plataforma agregadora). Reporte 03/07: 73 paquetes, 46.6% entregados, 25 estados; incidencias mayormente por out of stock del seller, no logísticas. Tiene account manager para la operación diaria."},
+
+    {id:"basil", empresa:"Basil", modelo:"B2C", ciudad:"", industria:"Retail / Última milla", etapa:"cliente",
+     senal:"Cliente activo de última milla; abierto a dar testimonial.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Luis Alfonso Balbuena Silva", contactoCargo:"Director Comercial",
+     angulo:"Capitalizar la relación: testimonial + expansión de volumen.",
+     notas:"Se preparó carta de recomendación / testimonial a su nombre."},
+
+    {id:"multivende", empresa:"Multivende", modelo:"B2B", ciudad:"", industria:"SaaS eCommerce", etapa:"negociacion",
+     senal:"Integración y alta en proceso; falta cerrar la parte contractual.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Valentina Atehortua", contactoCargo:"Head of Partnerships LatAm",
+     angulo:"Cerrar el contrato de uso de logo para destrabar el go-live.",
+     proximaNota:"Firma de contrato de uso de logo",
+     notas:"Pendiente firma de contrato de uso de logo."},
+
+    {id:"doto", empresa:"Doto", modelo:"B2C", ciudad:"", industria:"eCommerce", etapa:"propuesta",
+     senal:"Integración estancada desde enero, atorada en el área de sistemas.", senalFecha:"2026-01-15",
+     contactoNombre:"Elie Braun", contactoCargo:"",
+     angulo:"Destrabar la integración técnica: sesión directa con su equipo de sistemas.",
+     notas:"Sin avance desde enero. Requiere escalamiento a nivel dirección para reactivar."},
+
+    {id:"banco-plata", empresa:"Banco Plata (Plata Card)", modelo:"B2B", ciudad:"CDMX", industria:"Fintech / Banca", etapa:"contactado",
+     courier:"Estafeta", sla:"Actual con Estafeta",
+     senal:"Despacha tarjetas físicas a domicilio con Estafeta. Cuenta estratégica del vertical de tarjetas.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Luis Alberto Macías Gómez", contactoCargo:"Director de Almacén / Logistics Manager",
+     angulo:"Desplazar a Estafeta en distribución de tarjeta física: 1–2.3 días en CDMX/EdoMex vs. su SLA actual.",
+     notas:"Más contactos en la misma cuenta, por orden de entrada: Neri Tollardo (Co-Founder & CEO, 1er grado), Miguel Quero Mejía (Deputy COO, ex DiDi y Nexu), Anastasia Sich (Head of Operations), y un Logistic & Inventory lead. Luis Alberto es dueño del fulfillment de tarjetas y el contacto más directo para el caso de uso real."},
+
+    {id:"apymsa", empresa:"APYMSA", modelo:"B2B", ciudad:"", industria:"Autopartes", etapa:"propuesta",
+     senal:"Dos sesiones previas; declaran estar evaluando propuestas.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Hilda Murillo", contactoCargo:"",
+     angulo:"Cerrar la evaluación en curso antes de que decidan con otro carrier.",
+     notas:"Segundo contacto en la cuenta: Francisco Ruiz."},
+
+    {id:"platanomelon", empresa:"Platanomelón", modelo:"B2C", ciudad:"", industria:"eCommerce / Bienestar", etapa:"propuesta",
+     senal:"Ya opera con un 3PL vía almacén; se ofreció esquema inplant.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Axell", contactoCargo:"",
+     angulo:"Esquema inplant dentro de su almacén, sin mover su operación actual.",
+     notas:"Entra por la relación con Grupo Axo."},
+
+    {id:"amazon-3p", empresa:"Amazon (3P Carriers)", modelo:"B2B", ciudad:"CDMX", industria:"Marketplace / Partnership", etapa:"reunion",
+     senal:"Alianza de capacidad 3P estancada desde enero.", senalFecha:"2026-01-20",
+     contactoNombre:"Jorge Contreras", contactoCargo:"3P Carrier Manager",
+     angulo:"Reactivar la alianza ofreciendo capacidad en las plazas donde su red 3P está más apretada.",
+     notas:"Introducción vía Cristina Platas."},
+
+    {id:"price-shoes", empresa:"Price Shoes", modelo:"B2C", ciudad:"", industria:"Moda / Calzado", etapa:"prospecto",
+     courier:"Flota propia",
+     senal:"Opera flota propia con quejas públicas de servicio.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Jorge Pinzón", contactoCargo:"Director de Logística",
+     angulo:"Absorber el desborde de su flota propia en temporada alta, sin pedirle que la desmonte."},
+
+    {id:"grupo-axo", empresa:"Grupo Axo", modelo:"B2C", ciudad:"", industria:"Moda / Retail", etapa:"prospecto",
+     senal:"Perfil de muy buen fit; opera Privalia (flash sales) con picos fuertes de volumen.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Marisol Esqueda", contactoCargo:"Gerente Sr. de Transporte Retail / Wholesale / Ecommerce",
+     angulo:"Última milla para los picos de flash sales, donde el carrier fijo se satura.",
+     notas:"Contacto adicional: Karen Luna (Privalia). Platanomelón entra por esta misma cuenta."},
+
+    {id:"cyberpuerta", empresa:"Cyberpuerta", modelo:"B2C", ciudad:"Guadalajara (ZMG)", industria:"Electrónica", etapa:"prospecto",
+     senal:"eCommerce de electrónica con envío nacional desde ZMG.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Jan Plessow", contactoCargo:"",
+     angulo:"Tasa de daños y pérdidas menor a 0.01% en producto frágil de alto ticket.",
+     notas:"Segundo contacto: Cristian Miranda."},
+
+    {id:"liverpool", empresa:"Liverpool", modelo:"B2B", ciudad:"CDMX", industria:"Retail departamental", etapa:"prospecto",
+     senal:"Cuenta enterprise con esquema multicarrier abierto a proveedores.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Ángel Bryan Meza", contactoCargo:"Gerente Multicarrier",
+     angulo:"Entrar como carrier del esquema multicarrier en las plazas de red propia.",
+     notas:"Networking estratégico, no cierre directo: manejan RFP y logística propia. Otros contactos: Edwin Serment (Dir. Logística), Cyntia López Vázquez (Chief Supply Chain Officer), Felipe Suberville (CPO). Ojo: Javier también postuló a un empleo en Liverpool — mantener separado del trato comercial."},
+
+    {id:"oriflame", empresa:"Oriflame", modelo:"B2C", ciudad:"", industria:"Belleza / Venta directa", etapa:"prospecto",
+     senal:"Venta directa con entrega a consultora: red capilar y recurrente.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Mariana Rubio", contactoCargo:"",
+     angulo:"Entrega a consultora con cobertura capilar y ventana de entrega predecible."},
+
+    {id:"nespresso", empresa:"Nespresso", modelo:"B2C", ciudad:"", industria:"Consumo / Suscripción", etapa:"prospecto",
+     senal:"Modelo de suscripción con recompra recurrente.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Yessica Pazarán", contactoCargo:"",
+     angulo:"En suscripción pesa más la consistencia entrega tras entrega que la velocidad puntual.",
+     notas:"Contacto adicional: Ana Laura García."},
+
+    {id:"gotrendier", empresa:"GoTrendier", modelo:"B2C", ciudad:"", industria:"Moda C2C", etapa:"prospecto",
+     courier:"99 Minutos",
+     senal:"Opera con 99 Minutos, fuerte en zona metro pero limitado fuera de ella.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Aloma García", contactoCargo:"",
+     angulo:"Cobertura nacional (1,300+ ciudades) donde 99 Minutos no llega."},
+
+    {id:"pink-up", empresa:"Pink Up Cosmetics", modelo:"B2C", ciudad:"", industria:"Belleza", etapa:"prospecto",
+     senal:"Marca de cosmética D2C con venta en línea.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Natalia Gómez", contactoCargo:"Directora Comercial",
+     angulo:"Paquete pequeño de alta rotación: costo por guía y tiempo de entrega."},
+
+    {id:"thales-gemalto", empresa:"Thales / Gemalto", modelo:"B2B", ciudad:"", industria:"Personalización de tarjetas", etapa:"prospecto",
+     senal:"Nivel 1 del vertical de tarjetas: fabricante que despacha la tarjeta personalizada al titular.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"María Page", contactoCargo:"LATAM Logistics Manager",
+     angulo:"Despacho de tarjeta personalizada al titular con trazabilidad punto a punto.",
+     notas:"Mejor fit del vertical. Otros contactos: Paul, Andrea Lara, Reinaldo. Competencia del vertical: CPI Card Group / Identita (Mariana Beltrán del Río), IDEMIA México, Inzignia Tech, ForzaCard, MyCard."},
+
+    {id:"payjoy", empresa:"CashAhora / PayJoy", modelo:"B2C", ciudad:"", industria:"Fintech con producto físico", etapa:"prospecto",
+     senal:"Fintech que entrega producto físico al usuario final.", senalFecha:HOY_SEMILLA,
+     contactoNombre:"Alberto Solano", contactoCargo:"",
+     angulo:"Entrega de dispositivo con validación de identidad en el punto de entrega."},
+
+    {id:"calzado-evolucion", empresa:"Calzado Evolución", modelo:"B2C", ciudad:"", industria:"Moda / Calzado", etapa:"prospecto",
+     courier:"Estafeta", sla:"3–7 días",
+     senal:"Su tienda en línea despacha todo por Estafeta con tiempo de 3 a 7 días según ciudad.", senalFecha:HOY_SEMILLA,
+     contactoCargo:"Gerente / Coordinador de Logística o eCommerce Ops",
+     angulo:"Velocidad: 1–2.3 días en CDMX/EdoMex contra los 3–7 días de su Estafeta actual.",
+     notas:"Mejor fit del batch de prospección del 21 jul. Ya paga a un competidor con SLA lento: cuña directa."},
+
+    {id:"gf-calzado", empresa:"GF Calzado", modelo:"B2C", ciudad:"", industria:"Moda / Calzado", etapa:"prospecto",
+     courier:"Multi-carrier",
+     senal:"Envía con FedEx, Estafeta, DHL, UPS y Paquetexpress, eligiendo la más rápida al destino.", senalFecha:HOY_SEMILLA,
+     angulo:"Ser el carrier por defecto en las zonas de red propia, en lugar de repartir entre cinco.",
+     notas:"Gestiona multi-carrier: comprador activo de última milla."},
+
+    {id:"canela-tomaso", empresa:"Canela y Tomaso", modelo:"B2C", ciudad:"CDMX", industria:"Pet care", etapa:"prospecto",
+     senal:"Reparte por alcaldías de CDMX (Azcapotzalco, Benito Juárez, Cuauhtémoc, Miguel Hidalgo, Coyoacán) y envía a toda la República.", senalFecha:HOY_SEMILLA,
+     angulo:"Mejorar tiempo y cobertura nacional sin que pierdan el control del envío local.",
+     notas:"Mejor fit del batch 2. Origen en zona core, paquete pequeño-mediano."},
+
+    {id:"pawerful", empresa:"Pawerful", modelo:"B2C", ciudad:"", industria:"Pet care premium", etapa:"prospecto",
+     senal:"Tienda online de alimento premium con entrega exprés a todo México; categoría de recompra recurrente.", senalFecha:HOY_SEMILLA,
+     angulo:"En alimento premium con recompra, la consistencia entrega tras entrega pesa más que la velocidad puntual."},
+
+    {id:"master-electronicos", empresa:"Master Electrónicos", modelo:"B2C", ciudad:"", industria:"Electrónica", etapa:"prospecto",
+     senal:"Tienda en línea de audio, video, computación y herramientas con envío nacional.", senalFecha:HOY_SEMILLA,
+     angulo:"Producto frágil: liderar con la tasa de daños menor a 0.01%."},
+
+    {id:"pulaski-shoes", empresa:"Pulaski Shoes", modelo:"B2C", ciudad:"", industria:"Calzado sustentable", etapa:"prospecto",
+     senal:"Proyecto D2C puro de calzado con materiales biodegradables; volumen medio-bajo.", senalFecha:HOY_SEMILLA,
+     angulo:"Logística verde: flota eléctrica y embalaje ecológico como argumento ESG.",
+     notas:"Marca nicho. Mejor por mensaje corto de LinkedIn que por correo largo."}
+  ];
+
+  /* ---------------- Estado ---------------- */
+
+  var estado = {
+    cuentas: {},           /* id -> registro */
+    db: null,
+    persistente: false,
+    vista: "lista",
+    q: "",
+    plaza: "",
+    modelo: "",
+    etapa: "",
+    abierta: null
+  };
+
+  SEMILLA.forEach(function(s){
+    var r = normalizar(s);
+    r.fecha = r.fecha || HOY_SEMILLA;
+    estado.cuentas[s.id] = r;
+  });
+
+  /* ---------------- Utilidades ---------------- */
+
+  var $ = function(sel){ return document.querySelector(sel); };
+
+  function esc(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+      .replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+  }
+
+  function lista(){
+    var out = [], id;
+    for(id in estado.cuentas){
+      if(Object.prototype.hasOwnProperty.call(estado.cuentas,id)){
+        var r = estado.cuentas[id];
+        out.push({id:id, d:r});
+      }
+    }
+    out.sort(function(a,b){
+      var ra = RANGO[a.d.etapa], rb = RANGO[b.d.etapa];
+      if(ra === undefined) ra = 9;
+      if(rb === undefined) rb = 9;
+      if(ra !== rb) return ra - rb;
+      return a.d.empresa.localeCompare(b.d.empresa, "es");
+    });
+    return out;
+  }
+
+  function filtradas(){
+    var q = estado.q.trim().toLowerCase();
+    return lista().filter(function(c){
+      var d = c.d;
+      if(estado.etapa && d.etapa !== estado.etapa) return false;
+      if(estado.plaza && d.ciudad !== estado.plaza) return false;
+      if(estado.modelo && d.modelo !== estado.modelo) return false;
+      if(!q) return true;
+      var blob = [d.empresa,d.industria,d.senal,d.contactoNombre,d.contactoCargo,d.angulo,d.notas,d.courier,d.ciudad].join(" ").toLowerCase();
+      return blob.indexOf(q) !== -1;
+    });
+  }
+
+  function fmtNum(n){
+    if(n === null || n === undefined || n === "") return "—";
+    return Number(n).toLocaleString("es-MX");
+  }
+
+  function fmtFecha(f){
+    if(!f) return "";
+    var p = String(f).split("-");
+    if(p.length !== 3) return f;
+    var meses = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+    var mi = parseInt(p[1],10) - 1;
+    return parseInt(p[2],10) + " " + (meses[mi] || p[1]) + " " + p[0];
+  }
+
+  var toastT = null;
+  function toast(msg, err){
+    var t = document.getElementById("toast");
+    if(!t){
+      t = document.createElement("div");
+      t.id = "toast";
+      document.body.appendChild(t);
+    }
+    t.className = "toast" + (err ? " err" : "");
+    t.textContent = msg;
+    clearTimeout(toastT);
+    toastT = setTimeout(function(){ if(t.parentNode) t.parentNode.removeChild(t); }, 3400);
+  }
+
+  /* ---------------- Render ---------------- */
+
+  function renderKpis(){
+    var todas = lista();
+    var pipeline = todas.filter(function(c){ return !ETAPA_POR_ID[c.d.etapa].cerrada; });
+    var avanzadas = todas.filter(function(c){ return ETAPA_POR_ID[c.d.etapa].avanzada; });
+    var clientes = todas.filter(function(c){ return c.d.etapa === "cliente"; });
+    var sinAccion = pipeline.filter(function(c){ return !c.d.proxima; });
+
+    var tiles = [
+      {label:"Cuentas en pipeline", num:pipeline.length, note:todas.length + " cuentas en total"},
+      {label:"Etapa avanzada", num:avanzadas.length, note:"Propuesta y Negociación"},
+      {label:"Clientes activos", num:clientes.length, note:"Cuentas ganadas en operación"},
+      {label:"Sin próxima acción", num:sinAccion.length, note:sinAccion.length ? "Agenda el siguiente paso" : "Todo el pipeline tiene fecha", alerta:sinAccion.length > 0}
+    ];
+
+    $("#kpis").innerHTML = tiles.map(function(t){
+      return '<div class="kpi' + (t.alerta ? " alerta" : "") + '">' +
+        '<p class="k-label">' + esc(t.label) + '</p>' +
+        '<p class="k-num">' + t.num + '</p>' +
+        '<p class="k-note">' + esc(t.note) + '</p>' +
+      '</div>';
+    }).join("");
+  }
+
+  function renderChips(){
+    var todas = lista();
+    var html = ['<button class="chip" data-etapa="" aria-pressed="' + (estado.etapa === "" ? "true" : "false") + '">Todas<span class="n">' + todas.length + '</span></button>'];
+    ETAPAS.forEach(function(e){
+      var n = todas.filter(function(c){ return c.d.etapa === e.id; }).length;
+      html.push('<button class="chip" data-etapa="' + e.id + '" aria-pressed="' + (estado.etapa === e.id ? "true" : "false") + '">' + esc(e.nom) + '<span class="n">' + n + '</span></button>');
+    });
+    $("#chips").innerHTML = html.join("");
+  }
+
+  function renderPlazas(){
+    var sel = $("#f-plaza");
+    var previo = estado.plaza;
+    var vistos = {};
+    lista().forEach(function(c){ if(c.d.ciudad) vistos[c.d.ciudad] = true; });
+    var opts = ['<option value="">Todas las plazas</option>'];
+    Object.keys(vistos).sort(function(a,b){ return a.localeCompare(b,"es"); }).forEach(function(p){
+      opts.push('<option value="' + esc(p) + '">' + esc(p) + '</option>');
+    });
+    sel.innerHTML = opts.join("");
+    sel.value = previo;
+    if(sel.value !== previo){ estado.plaza = ""; sel.value = ""; }
+  }
+
+  function pillEtapa(id){
+    var e = ETAPA_POR_ID[id];
+    return '<span class="pill ' + etapaClase(id) + '">' + esc(e ? e.nom : id) + '</span>';
+  }
+
+  function renderLista(cs){
+    if(!cs.length) return vacio();
+    var head = '<div class="lista-head">' +
+      '<div>Empresa</div><div>Modelo</div><div>Plaza origen</div><div>Industria</div>' +
+      '<div>Etapa</div><div class="col-num">Envíos/mes</div><div>Contacto</div></div>';
+
+    var filas = cs.map(function(c){
+      var d = c.d;
+      var contacto = d.contactoNombre
+        ? esc(d.contactoNombre) + (d.contactoCargo ? '<span class="sub truncar">' + esc(d.contactoCargo) + '</span>' : "")
+        : '<span class="pill verificar">Por definir</span>';
+      /* La subrasante nombra al courier a desplazar, que es el ángulo de venta;
+         la industria ya tiene su propia columna. */
+      var aDesplazar = d.courier ? d.courier + (d.sla ? " · " + d.sla : "") : "";
+      var meta = esc(d.modelo) + " · " + esc(d.ciudad || "plaza por definir") +
+        (d.volumen === null ? "" : " · " + fmtNum(d.volumen) + " env/mes");
+
+      return '<button class="fila" data-id="' + esc(c.id) + '" type="button">' +
+        '<div class="c-empresa"><span class="empresa">' + esc(d.empresa) + '</span>' +
+          (aDesplazar ? '<span class="sub truncar">' + esc(aDesplazar) + '</span>' : "") + '</div>' +
+        '<div class="c-oculto"><span class="tag-modelo">' + esc(d.modelo) + '</span></div>' +
+        '<div class="c-oculto truncar">' + esc(d.ciudad || "Por definir") + '</div>' +
+        '<div class="c-oculto truncar">' + esc(d.industria || "—") + '</div>' +
+        '<div class="c-etapa">' + pillEtapa(d.etapa) + '</div>' +
+        '<div class="c-vol col-num">' + fmtNum(d.volumen) + '</div>' +
+        '<div class="c-oculto truncar">' + contacto + '</div>' +
+        '<div class="c-meta">' + meta + '</div>' +
+        '<div class="c-senal">' + esc(d.senal || "Sin señal registrada") + '</div>' +
+      '</button>';
+    }).join("");
+
+    return '<div class="lista">' + head + filas + '</div>';
+  }
+
+  function renderTablero(cs){
+    if(!cs.length) return vacio();
+    return '<div class="tablero">' + ETAPAS.map(function(e){
+      var enCol = cs.filter(function(c){ return c.d.etapa === e.id; });
+      var cuerpo = enCol.length
+        ? enCol.map(function(c){
+            var d = c.d;
+            var ultima = e.id === "cliente" || e.id === "perdido";
+            return '<div class="tarjeta">' +
+              '<div class="t-top">' +
+                '<button class="t-nom" data-id="' + esc(c.id) + '" type="button" style="background:none;border:0;padding:0;color:inherit;font:inherit;text-align:left;cursor:pointer">' + esc(d.empresa) + '</button>' +
+                (ultima ? "" : '<button class="avanzar" data-avanzar="' + esc(c.id) + '" type="button" title="Avanzar etapa" aria-label="Avanzar ' + esc(d.empresa) + ' a la siguiente etapa">›</button>') +
+              '</div>' +
+              '<p class="t-meta mono">' + esc(d.modelo) + ' · ' + esc(d.ciudad || "plaza s/d") + ' · ' + fmtNum(d.volumen) + ' env/mes</p>' +
+              (d.senal ? '<p class="t-senal">' + esc(d.senal) + '</p>' : "") +
+            '</div>';
+          }).join("")
+        : '<p class="col-vacia">Sin cuentas</p>';
+      return '<section class="columna">' +
+        '<div class="col-head"><span class="paso">' + esc(e.paso) + '</span><h3>' + esc(e.nom) + '</h3><span class="cuenta">' + enCol.length + '</span></div>' +
+        '<div class="col-body">' + cuerpo + '</div>' +
+      '</section>';
+    }).join("") + '</div>';
+  }
+
+  function vacio(){
+    return '<div class="lista" style="padding:38px 20px;text-align:center;color:var(--muted)">' +
+      'Ninguna cuenta coincide con los filtros activos.</div>';
+  }
+
+  function render(){
+    var cs = filtradas();
+    renderKpis();
+    renderChips();
+    $("#vista").innerHTML = estado.vista === "lista" ? renderLista(cs) : renderTablero(cs);
+    $("#v-lista").setAttribute("aria-pressed", estado.vista === "lista" ? "true" : "false");
+    $("#v-tablero").setAttribute("aria-pressed", estado.vista === "tablero" ? "true" : "false");
+    $("#pie").innerHTML = lista().length + " cuentas · " +
+      (estado.persistente
+        ? "Los cambios se guardan solos y siguen aquí la próxima vez que abras."
+        : "Sesión local: los cambios de esta pestaña no se están guardando.") +
+      "<br>Criterio ICP de iMile: origen CDMX, EdoMex, ZMG, ZMM o Puebla ZM · mínimo 500 envíos/mes, ideal 2,000+.";
+  }
+
+  /* ---------------- Panel de detalle ---------------- */
+
+  function campo(nom, etiqueta, valor, tipo, extra){
+    var attrs = extra || "";
+    var control;
+    if(tipo === "textarea"){
+      control = '<textarea name="' + nom + '" id="' + nom + '" rows="3" ' + attrs + '>' + esc(valor) + '</textarea>';
+    } else {
+      control = '<input name="' + nom + '" id="' + nom + '" type="' + (tipo || "text") + '" value="' + esc(valor) + '" ' + attrs + '>';
+    }
+    return '<div class="campo' + (tipo === "textarea" ? " ancho" : "") + '">' +
+      '<label for="' + nom + '">' + esc(etiqueta) + '</label>' + control + '</div>';
+  }
+
+  function abrir(id){
+    var esNueva = !id;
+    var d = esNueva ? normalizar({fecha: new Date().toISOString().slice(0,10)}) : estado.cuentas[id];
+    if(!d) return;
+    estado.abierta = esNueva ? null : id;
+
+    $("#panel-titulo").textContent = esNueva ? "Nueva cuenta" : d.empresa;
+    $("#panel-sub").innerHTML = esNueva
+      ? "Alta manual en el pipeline"
+      : esc(ETAPA_POR_ID[d.etapa].nom) + " · alta " + esc(fmtFecha(d.fecha) || "sin fecha");
+    $("#btn-borrar").hidden = esNueva;
+
+    var opcEtapa = ETAPAS.map(function(e){
+      return '<option value="' + e.id + '"' + (e.id === d.etapa ? " selected" : "") + '>' + esc(e.nom) + '</option>';
+    }).join("");
+    var opcModelo = ["B2C","B2B","B2B2C"].map(function(m){
+      return '<option value="' + m + '"' + (m === d.modelo ? " selected" : "") + '>' + m + '</option>';
+    }).join("");
+
+    $("#form").innerHTML =
+      '<fieldset><legend>Cuenta</legend><div class="campos">' +
+        campo("empresa","Empresa",d.empresa,"text",'required') +
+        '<div class="campo"><label for="modelo">Modelo</label><select name="modelo" id="modelo">' + opcModelo + '</select></div>' +
+        campo("ciudad","Plaza de origen",d.ciudad,"text",'list="dl-plazas" placeholder="CDMX, ZMG, ZMM…"') +
+        campo("industria","Industria",d.industria) +
+        '<div class="campo"><label for="etapa">Etapa</label><select name="etapa" id="etapa">' + opcEtapa + '</select></div>' +
+        '<div class="campo"><label for="volumen">Envíos estimados / mes</label>' +
+          '<input name="volumen" id="volumen" type="number" min="0" step="50" value="' + (d.volumen === null ? "" : d.volumen) + '" placeholder="Sin estimar">' +
+          '<span class="pista">ICP: mín. 500 · ideal 2,000+</span></div>' +
+      '</div></fieldset>' +
+
+      '<fieldset><legend>Señal de compra</legend><div class="campos">' +
+        campo("courier","Courier actual",d.courier,"text",'list="dl-couriers" placeholder="Estafeta, DHL, flota propia…"') +
+        campo("sla","SLA actual",d.sla,"text",'placeholder="3–7 días"') +
+        campo("senal","Señal clave",d.senal,"textarea",'placeholder="Qué detectaste y por qué es momento de entrar"') +
+        campo("senalFecha","Fecha de la señal",d.senalFecha,"date") +
+        campo("fecha","Fecha de prospección",d.fecha,"date") +
+      '</div></fieldset>' +
+
+      '<fieldset><legend>Decision maker</legend><div class="campos">' +
+        campo("contactoNombre","Nombre",d.contactoNombre) +
+        campo("contactoCargo","Cargo",d.contactoCargo) +
+        campo("contactoLinkedin","LinkedIn",d.contactoLinkedin,"url",'placeholder="Por verificar"') +
+        campo("contactoEmail","Correo",d.contactoEmail,"email",'placeholder="Por verificar"') +
+        campo("contactoTelefono","Teléfono",d.contactoTelefono,"tel",'placeholder="Por verificar"') +
+        '<div class="campo"><label>Verificación</label><span class="pista">' +
+          (d.contactoEmail || d.contactoTelefono
+            ? "Contacto con dato de alcance registrado."
+            : "Sin correo ni teléfono confirmado por Apollo/Lusha/Clay.") +
+        '</span></div>' +
+      '</div></fieldset>' +
+
+      '<fieldset><legend>Seguimiento</legend><div class="campos">' +
+        campo("angulo","Ángulo de outreach",d.angulo,"textarea") +
+        campo("proxima","Próxima acción",d.proxima,"date") +
+        campo("proximaNota","Qué toca hacer",d.proximaNota,"text",'placeholder="Llamada de 15 min, envío de propuesta…"') +
+        campo("notas","Notas",d.notas,"textarea") +
+      '</div></fieldset>';
+
+    $("#panel").hidden = false;
+    $("#scrim").hidden = false;
+    var primero = $("#form input[name=empresa]");
+    if(primero) primero.focus();
+  }
+
+  function cerrar(){
+    $("#panel").hidden = true;
+    $("#scrim").hidden = true;
+    estado.abierta = null;
+  }
+
+  function leerForm(){
+    var f = $("#form"), d = {}, k;
+    for(k in CAMPOS_VACIOS){
+      if(Object.prototype.hasOwnProperty.call(CAMPOS_VACIOS,k)){
+        var el = f.elements[k];
+        d[k] = el ? el.value : CAMPOS_VACIOS[k];
+      }
+    }
+    return normalizar(d);
+  }
+
+  function slug(s){
+    return String(s).toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+      .replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,40) || "cuenta";
+  }
+
+  /* ---------------- Persistencia ---------------- */
+
+  function guardarDoc(id, d){
+    estado.cuentas[id] = d;
+    render();
+    if(!estado.db) return Promise.resolve();
+    return estado.db.collection("cuentas").doc(id).set(d).catch(function(e){
+      toast("No se pudo guardar: " + (e && e.message ? e.message : "error"), true);
+    });
+  }
+
+  function borrarDoc(id){
+    delete estado.cuentas[id];
+    render();
+    if(!estado.db) return Promise.resolve();
+    return estado.db.collection("cuentas").doc(id).delete().catch(function(e){
+      toast("No se pudo eliminar: " + (e && e.message ? e.message : "error"), true);
+    });
+  }
+
+  function sembrar(db){
+    var cfg = db.doc("meta/config");
+    return cfg.get().then(function(s){
+      if(s.exists && s.data() && s.data().sembrado) return null;
+      return cfg.acquire({holder:"seed-" + Math.random().toString(36).slice(2), ttlMs:60000}).then(function(l){
+        if(!l.acquired) return null;
+        return cfg.get().then(function(s2){
+          if(s2.exists && s2.data() && s2.data().sembrado) return null;
+          var ids = Object.keys(estado.cuentas);
+          var cadena = Promise.resolve();
+          ids.forEach(function(id){
+            cadena = cadena.then(function(){
+              return db.collection("cuentas").doc(id).set(estado.cuentas[id]);
+            });
+          });
+          return cadena.then(function(){
+            return cfg.set({sembrado:true, version:1, fecha:new Date().toISOString()});
+          });
+        });
+      });
+    }).catch(function(e){
+      toast("No se pudo cargar el pipeline inicial: " + (e && e.message ? e.message : "error"), true);
+    });
+  }
+
+  function conectar(){
+    if(!window.claude || typeof window.claude.use !== "function"){ render(); return; }
+    window.claude.use("db").then(function(db){
+      if(!db){
+        $("#aviso").hidden = false;
+        $("#aviso").textContent = "Esta vista no puede guardar cambios. Estás viendo el pipeline con los datos iniciales; lo que edites se pierde al recargar.";
+        render();
+        return;
+      }
+      estado.db = db;
+      estado.persistente = true;
+      return sembrar(db).then(function(){
+        db.collection("cuentas").onSnapshot(function(snap){
+          var nuevas = {};
+          snap.docs.forEach(function(doc){
+            if(doc.exists) nuevas[doc.id] = normalizar(doc.data());
+          });
+          if(snap.size > 0 || Object.keys(estado.cuentas).length === 0){
+            estado.cuentas = nuevas;
+          }
+          renderPlazas();
+          render();
+        }, function(e){
+          estado.persistente = false;
+          $("#aviso").hidden = false;
+          $("#aviso").textContent = "Se perdió la conexión con la base de datos (" + (e && e.code ? e.code : "error") + "). Recarga la página para volver a sincronizar.";
+          render();
+        });
+      });
+    }).catch(function(){ render(); });
+  }
+
+  /* ---------------- CSV ---------------- */
+
+  var COLS = [
+    ["Fecha_Prospeccion", function(d){ return d.fecha; }],
+    ["Empresa",           function(d){ return d.empresa; }],
+    ["Modelo",            function(d){ return d.modelo; }],
+    ["Ciudad_Origen",     function(d){ return d.ciudad; }],
+    ["Industria",         function(d){ return d.industria; }],
+    ["Señal_Clave",       function(d){ return d.senal; }],
+    ["Volumen_Estimado",  function(d){ return d.volumen === null ? "" : d.volumen; }],
+    ["Contacto_Nombre",   function(d){ return d.contactoNombre; }],
+    ["Contacto_Cargo",    function(d){ return d.contactoCargo; }],
+    ["Contacto_LinkedIn", function(d){ return d.contactoLinkedin || "Por verificar"; }],
+    ["Contacto_Email",    function(d){ return d.contactoEmail || "Por verificar"; }],
+    ["Contacto_Telefono", function(d){ return d.contactoTelefono || "Por verificar"; }],
+    ["Angulo_Outreach",   function(d){ return d.angulo; }],
+    ["Estatus",           function(d){ return (ETAPA_POR_ID[d.etapa] || {}).nom || d.etapa; }],
+    ["Courier_Actual",    function(d){ return d.courier; }],
+    ["SLA_Actual",        function(d){ return d.sla; }],
+    ["Proxima_Accion",    function(d){ return d.proxima ? d.proxima + (d.proximaNota ? " — " + d.proximaNota : "") : ""; }],
+    ["Notas",             function(d){ return d.notas; }]
+  ];
+
+  function celda(v){
+    var s = (v === null || v === undefined) ? "" : String(v);
+    return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g,'""') + '"' : s;
+  }
+
+  function csv(){
+    var cs = filtradas();
+    var filas = [COLS.map(function(c){ return c[0]; }).join(",")];
+    cs.forEach(function(c){
+      filas.push(COLS.map(function(col){ return celda(col[1](c.d)); }).join(","));
+    });
+    return "﻿" + filas.join("\r\n") + "\r\n";
+  }
+
+  function exportar(){
+    var contenido = csv();
+    var nombre = "shipio-pipeline-" + new Date().toISOString().slice(0,10) + ".csv";
+    if(!window.claude || typeof window.claude.use !== "function"){
+      toast("La descarga no está disponible en esta vista.", true);
+      return;
+    }
+    window.claude.use("downloads").then(function(dl){
+      if(!dl){ toast("La descarga no está disponible en esta vista.", true); return; }
+      return dl.save({filename:nombre, data:contenido}).then(function(){
+        toast(filtradas().length + " cuentas exportadas.");
+      });
+    }).catch(function(e){
+      var c = e && e.code;
+      if(c === "declined") return;
+      toast("No se pudo descargar el CSV" + (c ? " (" + c + ")" : "") + ".", true);
+    });
+  }
+
+  /* ---------------- Eventos ---------------- */
+
+  $("#q").addEventListener("input", function(e){ estado.q = e.target.value; render(); });
+  $("#f-plaza").addEventListener("change", function(e){ estado.plaza = e.target.value; render(); });
+  $("#f-modelo").addEventListener("change", function(e){ estado.modelo = e.target.value; render(); });
+  $("#v-lista").addEventListener("click", function(){ estado.vista = "lista"; render(); });
+  $("#v-tablero").addEventListener("click", function(){ estado.vista = "tablero"; render(); });
+  $("#btn-nueva").addEventListener("click", function(){ abrir(null); });
+  $("#btn-csv").addEventListener("click", exportar);
+  $("#btn-cerrar").addEventListener("click", cerrar);
+  $("#scrim").addEventListener("click", cerrar);
+
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" && !$("#panel").hidden) cerrar();
+  });
+
+  $("#chips").addEventListener("click", function(e){
+    var b = e.target.closest("[data-etapa]");
+    if(!b) return;
+    estado.etapa = b.getAttribute("data-etapa");
+    render();
+  });
+
+  $("#vista").addEventListener("click", function(e){
+    var av = e.target.closest("[data-avanzar]");
+    if(av){
+      var aid = av.getAttribute("data-avanzar");
+      var d = estado.cuentas[aid];
+      if(!d) return;
+      var i = ETAPAS.findIndex(function(x){ return x.id === d.etapa; });
+      if(i < 0 || i >= ETAPAS.length - 2) return;
+      var copia = normalizar(d);
+      copia.etapa = ETAPAS[i+1].id;
+      guardarDoc(aid, copia);
+      toast(copia.empresa + " → " + ETAPAS[i+1].nom);
+      return;
+    }
+    var f = e.target.closest("[data-id]");
+    if(f) abrir(f.getAttribute("data-id"));
+  });
+
+  $("#btn-guardar").addEventListener("click", function(){
+    var d = leerForm();
+    if(!d.empresa.trim()){ toast("Escribe el nombre de la empresa.", true); return; }
+    var id = estado.abierta;
+    if(!id){
+      id = slug(d.empresa);
+      if(estado.cuentas[id]) id = id + "-" + Math.random().toString(36).slice(2,6);
+    }
+    guardarDoc(id, d);
+    cerrar();
+    toast(d.empresa + " guardada.");
+  });
+
+  $("#btn-borrar").addEventListener("click", function(){
+    var id = estado.abierta;
+    if(!id) return;
+    var nom = estado.cuentas[id] ? estado.cuentas[id].empresa : "la cuenta";
+    if(!window.confirm("¿Eliminar " + nom + " del pipeline? No se puede deshacer.")) return;
+    borrarDoc(id);
+    cerrar();
+    toast(nom + " eliminada.");
+  });
+
+  /* ---------------- Arranque ---------------- */
+
+  if(window.matchMedia && window.matchMedia("(min-width: 1100px)").matches){
+    estado.vista = "lista";
+  }
+  renderPlazas();
+  render();
+  conectar();
+})();
+</script>

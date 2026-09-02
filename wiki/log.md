@@ -34,10 +34,13 @@ para las últimas entradas.
 
 ## [2026-09-02] revision | CRM Shipio reconstruido y publicado como app
 
-Diagnóstico del acceso perdido: el repo `javmalher-ops/crm-shipio` existe pero
-está vacío (0 commits) — la versión de jul–ago 2026 se construyó dentro de la
+Diagnóstico del acceso perdido: el repo `javmalher-ops/crm-shipio` existía pero
+estaba vacío (0 commits) — la versión de jul–ago 2026 se construyó dentro de la
 computadora local y el código nunca se subió, así que nunca hubo una URL que
 abrir. Reconstruido desde cero como app publicada con base de datos propia y
 export CSV, sembrada con las 24 cuentas de [[Prospeccion-y-Pipeline-iMile]] y el
-batch de `prospeccion-diaria/`. Código versionado en `crm-shipio/shipio.html`
-para que no dependa otra vez de una máquina local.
+batch de `prospeccion-diaria/`.
+
+El código vive en su propio repo, <https://github.com/javmalher-ops/crm-shipio>
+(`index.html`), no en este vault. La app está en
+<https://claude.ai/code/artifact/79b8f2ce-45ea-4c74-9532-281c4559b23f>.

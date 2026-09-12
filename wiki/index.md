@@ -1,6 +1,6 @@
 ---
 tipo: indice
-actualizado: 2026-07-21
+actualizado: 2026-09-12
 ---
 
 # Índice de la wiki
@@ -111,6 +111,8 @@ página. Ver [[Sintesis]] para el panorama general.
 - [[3PL-4PL]] — modelo de tercerización logística recurrente.
 - [[ICP-y-Estrategia-Comercial-iMile]] — cliente ideal y método de
   prospección/comunicación de Javier en iMile.
+- [[App-Ruta-Ultima-Milla]] — app de escaneo de guías y optimización de rutas
+  construida en `app/` para la operación con [[Mercado Libre]]. (2026-09-12)
 
 ## Comparaciones
 
@@ -120,6 +122,12 @@ _Aún no hay comparaciones archivadas._
 
 - [[sesiones/2026-07-21 Configuracion Inicial y Primera Ingesta|Sesión 2026-07-21]]
   — configuración inicial de la wiki y primera ronda completa de ingesta.
+
+## Herramientas construidas
+
+- `app/` — **Ruta · Última Milla**: PWA de escaneo de guías y optimización de
+  rutas de reparto. Ver [[App-Ruta-Ultima-Milla]] para el diseño y los límites;
+  `app/README.md` para cómo correrla y publicarla. (2026-09-12)
 
 ## Respaldos (fuera de la wiki)
 

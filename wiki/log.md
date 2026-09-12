@@ -31,3 +31,22 @@ para las últimas entradas.
 ## [2026-07-21] ingesta | Export de la app de Claude (34 conversaciones) respaldado en transcripciones/; ingeridas las de trabajo: pipeline comercial iMile, ICP/estrategia, cliente envia.com, jefe Allen, búsqueda de empleo 2026
 
 ## [2026-07-21] ingesta | Segunda pasada del export: prospectos adicionales (Liverpool, Grupo Axo/Marisol Esqueda, Pink Up, Banco Plata/Luis Alberto Macías), enlace envia.com↔Tendencys, entrevista y test de aptitud de Liverpool
+
+## [2026-09-12] construccion | App Ruta · Última Milla (escaneo de guías + optimizador de rutas)
+
+Construida en `app/` una PWA offline para la operación de última milla que
+arranca con Mercado Libre. Cubre los tres escaneos de patio (inducción, carga a
+unidad, entrega), importación del manifiesto en CSV, geocodificación con caché,
+optimización VRP con ventanas horarias y capacidad, navegación a Google
+Maps/Waze y cierre del día en CSV con KPIs.
+
+Motor de optimización propio (`app/js/optimizador.js`): barrido polar para
+repartir zonas, vecino más cercano + 2-opt + Or-opt por ruta, y reequilibrio
+entre unidades. 1,500 guías en 12 unidades se planifican en ~470 ms.
+
+21 pruebas automatizadas (`npm test`) y verificación de punta a punta en
+navegador real. Documentado en [[App-Ruta-Ultima-Milla]].
+
+Pendiente abierto que no se puede resolver desde aquí: confirmar con Mercado
+Libre por qué canal exigen la actualización de estatus (API, SFTP o portal).
+

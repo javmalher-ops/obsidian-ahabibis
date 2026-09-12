@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ruta · Última Milla</title>
+  <meta name="description" content="Escaneo de guías y optimización de rutas de reparto de última milla.">
+  <meta name="theme-color" content="#171a21">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+<header>
+  <div class="marca">R</div>
+  <h1>Ruta · Última Milla</h1>
+  <div class="estado-dia" id="estado-dia"></div>
+</header>
+
+<main>
+
+  <!-- ====================== INDUCCIÓN ====================== -->
+  <section class="vista" id="vista-induccion">
+    <div class="tarjeta">
+      <h2>Escaneo de guías</h2>
+      <div class="campo">
+        <label for="modo-escaneo">¿Qué estás escaneando?</label>
+        <select id="modo-escaneo">
+          <option value="induccion">Inducción — recibiendo del CEDIS</option>
+          <option value="carga">Carga a unidad — subiendo al vehículo</option>
+        </select>
+      </div>
+      <div class="fila">
+        <button id="btn-camara" class="primario">📷 Encender cámara</button>
+        <button id="btn-manual">⌨️ Capturar a mano</button>
+      </div>
+      <p class="tenue" id="pista-lector">El lector Bluetooth de anillo o pistola funciona sin encender la cámara: dispara y listo.</p>
+    </div>
+
+    <div class="tarjeta" id="caja-camara" hidden>
+      <div id="camara-caja"><video id="video" muted playsinline></video><div class="mira"></div></div>
+      <div class="fila" style="margin-top:10px"><button id="btn-apagar-camara">Apagar cámara</button></div>
+    </div>
+
+    <div id="aviso-escaneo"></div>
+
+    <div class="tarjeta">
+      <h2>Últimas leídas <span id="conteo-leidas" class="tenue"></span></h2>
+      <ul class="lista" id="lista-leidas"><li class="vacio-msg">Aún no escaneas ninguna guía.</li></ul>
+    </div>
+  </section>
+
+  <!-- ====================== MANIFIESTO ====================== -->
+  <section class="vista" id="vista-manifiesto" hidden>
+    <div class="tarjeta">
+      <h2>Cargar manifiesto</h2>
+      <p class="tenue">Sube el archivo que te entrega Mercado Libre (CSV o el Excel guardado como CSV). Las columnas se reconocen solas.</p>
+      <div class="campo"><input type="file" id="archivo-csv" accept=".csv,text/csv"></div>
+      <div class="fila">
+        <button id="btn-ejemplo">Cargar manifiesto de ejemplo</button>
+        <button id="btn-exportar-manifiesto">Exportar manifiesto</button>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Geocodificación</h2>
+      <p class="tenue" id="resumen-geo"></p>
+      <div class="barra-avance" id="barra-geo" hidden><i style="width:0"></i></div>
+      <div class="fila">
+        <button id="btn-geo" class="primario">📍 Ubicar direcciones</button>
+        <button id="btn-geo-cp">Rellenar por CP</button>
+        <button id="btn-geo-parar" hidden class="peligro">Detener</button>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Paradas <span id="conteo-paradas" class="tenue"></span></h2>
+      <div class="campo"><input type="search" id="buscar-parada" placeholder="Buscar guía, destinatario, colonia o CP"></div>
+      <div class="tabla-envoltura">
+        <table id="tabla-paradas">
+          <thead><tr>
+            <th>Guía</th><th>Destinatario</th><th>Dirección</th><th>Colonia</th>
+            <th>CP</th><th>Ventana</th><th>Ubicación</th><th>Estatus</th><th></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== RUTA ====================== -->
+  <section class="vista" id="vista-ruta" hidden>
+    <div class="tarjeta">
+      <h2>Punto de salida (CEDIS)</h2>
+      <div class="campo"><label for="cedis-direccion">Dirección del CEDIS o punto de carga</label>
+        <input id="cedis-direccion" placeholder="Ej. Av. Central 100, Iztapalapa, CDMX"></div>
+      <div class="rejilla">
+        <div class="campo"><label for="cedis-lat">Latitud</label><input id="cedis-lat" inputmode="decimal" placeholder="19.4326"></div>
+        <div class="campo"><label for="cedis-lng">Longitud</label><input id="cedis-lng" inputmode="decimal" placeholder="-99.1332"></div>
+      </div>
+      <div class="fila">
+        <button id="btn-cedis-buscar">Buscar dirección</button>
+        <button id="btn-cedis-gps">Usar mi ubicación</button>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Parámetros de la ruta</h2>
+      <div class="rejilla">
+        <div class="campo"><label for="cfg-unidades">Unidades</label><input id="cfg-unidades" type="number" min="1" max="40" inputmode="numeric"></div>
+        <div class="campo"><label for="cfg-capacidad">Piezas por unidad</label><input id="cfg-capacidad" type="number" min="1" inputmode="numeric"></div>
+        <div class="campo"><label for="cfg-salida">Hora de salida</label><input id="cfg-salida" type="time"></div>
+        <div class="campo"><label for="cfg-velocidad">Velocidad (km/h)</label><input id="cfg-velocidad" type="number" min="5" max="80" inputmode="numeric"></div>
+        <div class="campo"><label for="cfg-servicio">Minutos por parada</label><input id="cfg-servicio" type="number" min="1" max="30" inputmode="numeric"></div>
+        <div class="campo"><label for="cfg-abierta">Regreso al CEDIS</label>
+          <select id="cfg-abierta"><option value="false">Sí, cierra el circuito</option><option value="true">No, termina en la última parada</option></select>
+        </div>
+      </div>
+      <button id="btn-optimizar" class="primario crece">⚡ Calcular ruta óptima</button>
+      <p class="tenue" id="estado-optimizacion"></p>
+    </div>
+
+    <div class="tarjeta" id="caja-resultado" hidden>
+      <h2>Resultado</h2>
+      <div class="kpis" id="kpis-ruta"></div>
+      <div id="mapa" class="vacio" style="margin-top:12px">El mapa necesita conexión. La ruta de abajo funciona sin señal.</div>
+      <div class="campo" style="margin-top:12px"><label for="sel-unidad">Ver unidad</label><select id="sel-unidad"></select></div>
+      <ul class="lista" id="lista-ruta"></ul>
+      <div class="fila" style="margin-top:10px">
+        <button id="btn-navegar-todo">🧭 Abrir en Google Maps</button>
+        <button id="btn-exportar-ruta">Exportar ruta</button>
+      </div>
+      <div id="sin-ubicar"></div>
+    </div>
+  </section>
+
+  <!-- ====================== ENTREGA ====================== -->
+  <section class="vista" id="vista-entrega" hidden>
+    <div class="tarjeta">
+      <h2>Siguiente parada</h2>
+      <div class="campo"><label for="sel-unidad-entrega">Unidad</label><select id="sel-unidad-entrega"></select></div>
+      <div id="parada-actual"></div>
+    </div>
+    <div class="tarjeta">
+      <h2>Pendientes de la unidad</h2>
+      <ul class="lista" id="lista-pendientes"></ul>
+    </div>
+  </section>
+
+  <!-- ====================== CIERRE ====================== -->
+  <section class="vista" id="vista-cierre" hidden>
+    <div class="tarjeta">
+      <h2>Cierre del día</h2>
+      <div class="kpis" id="kpis-cierre"></div>
+    </div>
+    <div class="tarjeta">
+      <h2>Motivos de no entrega</h2>
+      <ul class="lista" id="lista-motivos"><li class="vacio-msg">Sin no-entregas registradas.</li></ul>
+    </div>
+    <div class="tarjeta">
+      <h2>Exportar</h2>
+      <p class="tenue">El archivo sale en CSV con BOM: Excel en español lo abre con acentos correctos.</p>
+      <div class="fila">
+        <button id="btn-exportar-cierre" class="primario">⬇️ Descargar cierre</button>
+        <button id="btn-exportar-fallidas">Solo no entregadas</button>
+      </div>
+    </div>
+    <div class="tarjeta">
+      <h2>Geocodificador</h2>
+      <div class="campo"><label for="cfg-geocodificador">Proveedor</label>
+        <select id="cfg-geocodificador">
+          <option value="nominatim">OpenStreetMap (gratis, lento, menos preciso)</option>
+          <option value="google">Google Maps (requiere clave, preciso)</option>
+        </select>
+      </div>
+      <div class="campo" id="caja-clave-google" hidden>
+        <label for="cfg-clave-google">Clave de API de Google</label>
+        <input id="cfg-clave-google" type="password" autocomplete="off" placeholder="AIza...">
+        <p class="tenue">Se guarda solo en este dispositivo. Restringe la clave por dominio en la consola de Google.</p>
+      </div>
+      <p class="tenue" id="info-cache"></p>
+      <button id="btn-limpiar-cache">Vaciar caché de direcciones</button>
+    </div>
+    <div class="tarjeta">
+      <h2>Terminar jornada</h2>
+      <p class="tenue">Exporta antes: esto borra las guías del día y deja la configuración lista para mañana.</p>
+      <button id="btn-cerrar-dia" class="peligro crece">Vaciar el día</button>
+    </div>
+  </section>
+
+</main>
+
+<nav class="barra">
+  <button data-vista="induccion" aria-current="page"><span class="icono">📦</span>Escanear</button>
+  <button data-vista="manifiesto"><span class="icono">📋</span>Manifiesto</button>
+  <button data-vista="ruta"><span class="icono">🗺️</span>Ruta</button>
+  <button data-vista="entrega"><span class="icono">🚚</span>Entregar</button>
+  <button data-vista="cierre"><span class="icono">📊</span>Cierre</button>
+</nav>
+
+<dialog id="dialogo-resultado">
+  <h3 style="margin-top:0" id="dlg-titulo">Resultado de la entrega</h3>
+  <p class="tenue" id="dlg-guia"></p>
+  <div class="campo"><label for="dlg-estatus">¿Qué pasó?</label>
+    <select id="dlg-estatus">
+      <option value="entregado">Entregado</option>
+      <option value="no_entregado">No entregado</option>
+      <option value="reprogramado">Reprogramado</option>
+    </select>
+  </div>
+  <div class="campo" id="caja-motivo" hidden><label for="dlg-motivo">Motivo</label><select id="dlg-motivo"></select></div>
+  <div class="campo" id="caja-recibio"><label for="dlg-recibio">¿Quién recibió?</label>
+    <input id="dlg-recibio" placeholder="Nombre de quien firma"></div>
+  <div class="fila">
+    <button id="dlg-cancelar">Cancelar</button>
+    <button id="dlg-guardar" class="primario">Guardar</button>
+  </div>
+</dialog>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
